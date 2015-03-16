@@ -162,7 +162,7 @@ addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
 LoadModel(NewShipType,1);
---LoadSharedModel(NewShipType,"Hgn_battlecruiser");
+
 StartShipWeaponConfig(NewShipType,"hgn_nuclearmissile","Weapon_pulsar","Weapon_pulsar");
 StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar","Weapon_pulsar");
 StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar2","Weapon_pulsar2");
@@ -172,12 +172,15 @@ StartShipWeaponConfig(NewShipType,"hgn_kineticburstcannon","Weapon_TurretTop","W
 StartShipWeaponConfig(NewShipType,"hgn_kineticburstcannon","Weapon_TurretTop2","Weapon_TurretTop2");
 StartShipWeaponConfig(NewShipType,"hgn_kineticburstcannonleft","Weapon_TurretTop3","Weapon_TurretTop3");
 StartShipWeaponConfig(NewShipType,"hgn_kineticburstcannonright","Weapon_TurretTop4","Weapon_TurretTop4");
+
 addShield(NewShipType,"EMP",10000,20);
+
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Innate","Damageable","Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Innate","Damageable","Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_BattleCruiserEngine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
 StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
+
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.19,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg05",1, 0.13,0,0,0, 25,10,-100,30,35,75,62,75,0,0,0,80,0,0,0,50);
@@ -186,6 +189,7 @@ SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml01",1, 0.06,0,0,0, 80,125,60,75,12
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml03",1, 0.05,0,0,0, 60,95,200,50,15,200,20,125,0,0,0,60,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml04",1, 0.04,0,0,0, 10,60,-300,25,35,80,65,75,0,0,0,60,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml05",1, 0.03,0,0,0, 60,10,30,75,35,25,65,75,0,0,0,60,0,0,0,50);
+
 NewShipType.battleScarCoverage = 4
 NewShipType.battleScarBudgetLow  =  800
 NewShipType.battleScarBudgetNext  =  1200

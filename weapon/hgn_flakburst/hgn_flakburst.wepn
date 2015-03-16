@@ -1,0 +1,14 @@
+-- LuaDC version 0.9.19
+-- 5/23/2004 7:33:01 PM
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+StartWeaponConfig(NewWeaponType, "Fixed", "SphereBurst", "ArtilleryBurst", "Normal", 0, 0, 80, 2, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 1, 0, 0)
+
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 2000, 2500, "")
+
+setPenetration(NewWeaponType,5,0,
+{Unarmoured=1},
+{LightArmour=2.5},
+{MediumArmour=0.08},
+{ResArmour=0.8});

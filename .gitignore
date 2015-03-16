@@ -41,3 +41,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Homeworld2 Files
+Animatics/
+*.big
+*.exe

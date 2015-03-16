@@ -1,0 +1,7 @@
+hgn_hdioncannon
+hgn_hulldefensegun
+hgn_mountedflak
+hgn_mshulldefensegun
+vgr_autocannon
+vgr_flakcannon
+vgr_frigate_pulse

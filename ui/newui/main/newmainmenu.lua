@@ -58,25 +58,25 @@ NewMainMenu = {
 				size_WH = LAYOUT_FILLSCREEN,
 			},	
 
---		BackgroundGraphic = {
---			size = { 800, 400 },
---			texture = "DATA:UI/NewUI/Background/load_background.mres",
---			textureUV = { 0, 56, 800, 455},
---		},
--- GBX:pdeupree - Uncomment the video here if you want to have a first main menu background video that is different than the rest.
-		BackgroundVideo = {
-			filenameV = "data:animatics/mainmenu.webm",
-			loop = 1,
-			fitScreen = 1,
-			fixedAspectRatio = 1,
-		},
+		-- BackgroundGraphic = {
+			-- size = { 800, 400 },
+			-- texture = "DATA:UI/NewUI/Background/load_background.mres",
+			-- textureUV = { 0, 56, 800, 455},
+		-- },
+		-- GBX:pdeupree - Uncomment the video here if you want to have a first main menu background video that is different than the rest.
+		-- BackgroundVideo = {
+			-- filenameV = "data:animatics/mainmenu.webm",
+			-- loop = 1,
+			-- fitScreen = 1,
+			-- fixedAspectRatio = 1,
+		-- },
 	},
 	
 	--EXAMPLE_SCREENS, -- BB - Comment this out before shipping				
 	--EXAMPLE_UITOOLBUTTONS,		-- Buttons
 	
 	-------- LOGO -------
-	BACKGROUND_LOGO,
+	--BACKGROUND_LOGO,
 	
 	----------------------------------- MAIN MENU  -----------------------------------
 	-- Panel frame
@@ -84,10 +84,10 @@ NewMainMenu = {
 		type = "RmWindow",
 		name = "MainMenu_Panel",
 		WindowTemplate = PANEL_WINDOWSTYLE,
-		TitleText = "$5577", -- "GAME MENU",
+		TitleText = "A REQUIEM FOR FREEDOM", -- "GAME MENU", "$5577",
 
 		Layout = {					
-				pos_XY = { x=1, y = .42,  xr="par", yr = "par" },	
+				pos_XY = { x=0.7, y = 0.5,  xr="par", yr = "par" },	
 				margin_RB = { r = 32/540, b = 0, rr = "scr", br = "scr" },
 				pivot_XY = { 1,  .5 },		
 		},	
@@ -136,8 +136,7 @@ NewMainMenu = {
 				MPButton(),
 				NewMenuButton("btnProfile",		"$2616",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyle1",	[[UI_SetNextScreen("UserProfile", "NewMainMenu");UI_SetPreviousScreen("UserProfile", "NewMainMenu");UI_ShowScreen("UserProfile", eTransition);]]),
 				NewMenuButton("btnOptions",		"$2607",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyle1",	"UI_ShowScreen(\"FEGameOptions\", eTransition)"),
-				NewMenuButton("btnMovies",		"$2608",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyle1",	"UI_ShowScreen(\"PlayMoviesScreen\", eTransition)"),
-				
+				NewMenuButton("btnMovies",		"$2608",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyle1",	"UI_ShowScreen(\"PlayMoviesScreen\", eTransition)"),				
 			
 				-- Spacer (This keeps the width as well)
 				{
@@ -145,7 +144,7 @@ NewMainMenu = {
 					size = {200, 10},
 				},		
 
-				NewMenuButton("btnExit",		"$2609",	nil,	0,	LAYOUT_EXIT_BUTTON,	"FEButtonStyle1_Alert_Chipped",	"UI_ExitApp();"),
+				NewMenuButton("btnExit",		"$2609",	nil,	0,	LAYOUT_MENU_BUTTONS,	"FEButtonStyle1_Alert_Chipped",	"UI_ExitApp();"), -- LAYOUT_EXIT_BUTTON
 
 			},
 		
@@ -246,12 +245,85 @@ NewMainMenu = {
 				sizetype = "contain",
 				
 				Text = {	
-					text = "$1221",
+					text = "v0.4", -- $1221
 					font = "ButtonFont",
 					hAlign = "Right",
 					vAlign = "Top",
 					color = {119,166,191,255},
 					offset = {-2, 0},
+				},
+			},
+		},
+		
+		-- Music Info
+		{
+			type = "Frame",
+			
+			Layout = {
+				pos_XY = { x = 0.225, y = 0.95, xr = "scr", yr = "scr" },
+				size_WH = { w = 0.0, h = 0.0, wr = "px", hr = "px" },
+				pivot_XY = { 1.0, 1.0 },
+			},
+			
+			name = "MusicFrame",
+			autosize = 1,
+			sizetype = "contain",
+			arrangetype = "horiz",
+			
+			BackgroundGraphic = {
+				texture = "DATA:UI\\NewUI\\Elements\\ui_textshadow.tga",
+				uvRect = { 4/32, 4/32, 28/32, 28/32 },
+				patch_X = { 9, -6, 9, 0 },
+				patch_Y = { 9, -6, 9, 0 },
+				patch_PadX = { 8, -8 },
+				patch_PadY = { 4, -4 },
+				patch_Scale = 1,
+			};
+			
+			-- Build Number
+			{
+				type = "TextLabel",
+				name = "lblBuildNumber",
+				visible = 1,
+				Layout = {
+					pos_XY = { x = 0.0, y = 0.0, xr = "px", yr = "px" },
+					size_WH = { w = 0.0, h = 0.0, wr = "px", hr = "px" },
+					pivot_XY = { 0.0, 0.0 },
+				},
+				
+				autosize = 1,
+				sizetype = "contain",
+				ignored = 1,
+				--Uncomment to hide...
+				--visible = 0,
+				
+				Text = {				
+					font = "ListBoxItemFont",
+					color = {255,255,255, 255},
+				},
+			},
+			
+			-- Version number
+			{
+				type = "TextLabel",
+				name = "lblVersion",
+				
+				Layout = {
+					pos_XY = { x = 0.0, y = 0.0, xr = "px", yr = "px" },
+					size_WH = { w = 0.0, h = 0.0, wr = "px", hr = "px" },
+					pivot_XY = { 0.0, 0.0 },
+				},
+				
+				autosize = 1,
+				sizetype = "contain",
+				
+				Text = {	
+					text = "Music: DJZ4k - Slipstream Ambient", -- $1221
+					font = "ButtonFont",
+					hAlign = "Right",
+					vAlign = "Top",
+					color = {119,166,191,255},
+					offset = {2, 0},
 				},
 			},
 		},
@@ -270,17 +342,17 @@ NewMainMenu = {
 		--},
 		
 		-- Data path
-		--{
-		--	type = "TextLabel",
-		--	name = "lblDataPath",
-		--	visible = 0,
-		--	size = {400, 13},
-		--	position = {0,39},
-		--	Text = {				
-		--		font = "ListBoxItemFont",
-		--		color = {255,255,255, 255},
-		--	},
-		--},
+		-- {
+			-- type = "TextLabel",
+			-- name = "lblDataPath",
+			-- visible = 0,
+			-- size = {400, 13},
+			-- position = {0,39},
+			-- Text = {				
+				-- font = "ListBoxItemFont",
+				-- color = {255,255,255, 255},
+			-- },
+		-- },
 	--},
 	
 	

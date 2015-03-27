@@ -19,11 +19,11 @@ NewShipType.defensiveFormation = "x"
 NewShipType.aggressiveFormation = "Claw"
 NewShipType.mass = 1000
 NewShipType.collisionMultiplier = 1
-NewShipType.thrusterMaxSpeed = 95
-NewShipType.mainEngineMaxSpeed = 110
+NewShipType.thrusterMaxSpeed = 100
+NewShipType.mainEngineMaxSpeed = 120
 NewShipType.rotationMaxSpeed = 6
-NewShipType.thrusterAccelTime = 12
-NewShipType.thrusterBrakeTime = 11
+NewShipType.thrusterAccelTime = 6
+NewShipType.thrusterBrakeTime = 5
 NewShipType.mainEngineAccelTime = 15
 NewShipType.mainEngineBrakeTime = 14
 NewShipType.rotationAccelTime = 5
@@ -154,7 +154,7 @@ addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Capturer,Frigate,
 {Munition = "MoveToTargetAndShoot"},
 {SubSystem = "FrontalVsSubSystem"});
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
-addAbility(NewShipType,"CanBuildShips",1,"SubSystem_Hgn","SubSystemModule");
+addAbility(NewShipType,"CanBuildShips",1,"Fighter_Hgn, SubSystem_Hgn","SubSystemModule, Fighter");
 addAbility(NewShipType,"CanBeCaptured",160,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");

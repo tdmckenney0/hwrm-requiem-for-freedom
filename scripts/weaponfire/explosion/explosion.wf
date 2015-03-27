@@ -1,0 +1,7 @@
+hitfx = "hit_generic"
+bulletfx = "dmg_cloud_main_explosion_combo"
+nopenetratefx = "nopen_generic"
+deathtype = "deathCannon"
+hit_sfx = "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY"
+hit_clamp = 
+    { 1, 1, }

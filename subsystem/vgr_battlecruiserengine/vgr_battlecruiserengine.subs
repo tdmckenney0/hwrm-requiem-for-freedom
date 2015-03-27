@@ -1,11 +1,6 @@
--- LuaDC version 0.9.20
--- 11/11/2008 7:35:05 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewSubSystemType = StartSubSystemConfig()
-NewSubSystemType.displayedName = "Engines"
-NewSubSystemType.sobDescription = "Engines"
+NewSubSystemType.displayedName = "$2030"
+NewSubSystemType.sobDescription = "$2031"
 NewSubSystemType.tacticalIcon = "hexagon"
 NewSubSystemType.tacticalIconMinSize = 0.0035
 NewSubSystemType.tacticalIconMinFadeSize = 0.0045

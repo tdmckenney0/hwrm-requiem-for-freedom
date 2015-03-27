@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"Gimble","Bullet","hddread","Normal",1200,2200,0,0,0,0,1,1,1,0.1,0,0,1,1,120,120,0.1,"Normal",1,0,0)
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","Plasma_Bomb","Normal",2500,1200,0,0,0,0,1,1,0,0.1,1.2,0.5,0,0,0,0,0.1,"Normal",0,0,0);
 
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",150,250,"")
 

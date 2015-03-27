@@ -125,8 +125,8 @@ NewShipType.selectionPriority = 75
 NewShipType.militaryUnit = 1
 NewShipType.SMHighlightDistMin = 20000
 NewShipType.SMHighlightDistMax = 25000
-addAbility(NewShipType,"MoveCommand",1,0);
-addAbility(NewShipType,"CanDock",1,0);
+addAbility(NewShipType, "MoveCommand", 1, 0)
+addAbility(NewShipType, "CanDock", 1, 0)
 NewShipType.dockTimeBetweenTwoFormations = 1
 NewShipType.dockTimeBeforeStart = 2
 NewShipType.dockNrOfShipsInDockFormation = 1
@@ -134,7 +134,7 @@ NewShipType.dockFormation = "delta"
 NewShipType.queueFormation = "dockline"
 NewShipType.dontDockWithOtherRaceShips = 1
 NewShipType.ignoreRaceWhenDocking = 0
-addAbility(NewShipType,"CanLaunch");
+addAbility(NewShipType, "CanLaunch")
 NewShipType.launchTimeBetweenTwoFormations = 1
 NewShipType.launchTimeBeforeStart = 2
 NewShipType.launchNrOfShipsInDockFormation = 1
@@ -143,20 +143,22 @@ addAbility(NewShipType,"ShipHold",1,0,5,"rallypoint","Fighter, Corvette",25,{Fig
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,2,600,1200,0,3);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.2,"Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","dread_strafe",
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.2,"Munition, Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","dread_strafe",
 {Fighter = "MoveToTargetAndShoot"},
 {Corvette = "MoveToTargetAndShoot"},
 {Munition = "MoveToTargetAndShoot"},
 {SubSystem = "FrontalVsSubSystem"});
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
-addAbility(NewShipType,"CanBuildShips",1,"SubSystem_Vgr","SubSystemModule");
+addAbility(NewShipType,"CanBuildShips",1,"Fighter_Vgr, SubSystem_Vgr","Fighter, SubSystemModule");
 addAbility(NewShipType,"CanBeCaptured",160,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap"); 
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
+
 LoadModel(NewShipType,1);
+
 StartShipWeaponConfig(NewShipType,"vgr_hulldefensegun","Weapon_HullD1","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"vgr_hulldefensegun","Weapon_HullD2","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"vgr_hulldefensegun","Weapon_HullD3","Fire_Missile");
@@ -167,7 +169,9 @@ StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser2","");
 StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser3","");
 StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser4","");
 StartShipWeaponConfig(NewShipType,"vgr_bcsuperbeam","Weapon_BCUberPulse","Weapon_BCUberPulse");
+
 addShield(NewShipType,"EMP",10000,20);
+
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Vgr_BattleCruiserEngine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Heavy Fusion Missile Launcher","Weapon_MissileBattery","Weapon","Innate","Damageable","Vgr_HeavyFusionMissileLauncherBC","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Vgr_C_Module_Hyperspace","Vgr_C_Module_CloakGenerator","Vgr_C_Module_HyperspaceInhibitor","Vgr_C_Module_FireControl","","","","");
@@ -180,6 +184,7 @@ SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml01",1, 0.06,0,0,0, 80,125,60,75,12
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml02",1, 0.05,0,0,0, 25,0,-125,50,80,35,120,75,0,0,0,60,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml03",1, 0.04,0,0,0, 60,95,200,50,15,200,20,125,0,0,0,60,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml05",1, 0.03,0,0,0, 60,10,30,75,35,25,65,75,0,0,0,60,0,0,0,50);
+
 NewShipType.battleScarCoverage = 4
 NewShipType.battleScarBudgetLow  =  800
 NewShipType.battleScarBudgetNext  =  1200

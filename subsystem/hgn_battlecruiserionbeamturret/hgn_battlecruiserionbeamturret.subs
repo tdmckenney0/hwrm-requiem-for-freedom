@@ -1,4 +1,4 @@
-NewSubSystemType  =  StartSubSystemConfig()
+NewSubSystemType = StartSubSystemConfig()
 NewSubSystemType.displayedName = "$2026"
 NewSubSystemType.sobDescription = "$2027"
 NewSubSystemType.tacticalIcon = "hexagon"

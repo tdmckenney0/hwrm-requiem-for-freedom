@@ -117,8 +117,8 @@ NewShipType.blobName = "$1576"
 NewShipType.blobNamePriority = 75
 NewShipType.SMHighlightDistMin = 30000
 NewShipType.SMHighlightDistMax = 50000
-addAbility(NewShipType,"MoveCommand",1,0);
-addAbility(NewShipType,"CanDock",1,0);
+addAbility(NewShipType, "MoveCommand", 1, 0)
+addAbility(NewShipType, "CanDock", 1, 0)
 NewShipType.dockTimeBetweenTwoFormations = 1
 NewShipType.dockTimeBeforeStart = 2
 NewShipType.dockNrOfShipsInDockFormation = 1
@@ -126,12 +126,12 @@ NewShipType.dockFormation = "delta"
 NewShipType.queueFormation = "dockline"
 NewShipType.dontDockWithOtherRaceShips = 1
 NewShipType.ignoreRaceWhenDocking = 0
-addAbility(NewShipType,"CanLaunch");
+addAbility(NewShipType, "CanLaunch")
 NewShipType.launchTimeBetweenTwoFormations = 1
 NewShipType.launchTimeBeforeStart = 2
 NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "delta"
-addAbility(NewShipType,"ShipHold",1,40,10,"rallypoint","Fighter,Corvette,Utility",35,{SuperCap = "2000"},{Frigate = "800"},{Fighter = "12"},{Corvette = "75"});
+addAbility(NewShipType, "ShipHold",1,40,10,"rallypoint","Fighter,Corvette,Utility",35,{SuperCap = "2000"},{Frigate = "800"},{Fighter = "12"},{Corvette = "75"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",1,5,1000,3500,0,3);

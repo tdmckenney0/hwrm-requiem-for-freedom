@@ -1,0 +1,16 @@
+-- Cold Fusion LUA Decompiler v1.0.0
+-- By 4E534B
+-- Date: 12-08-2007 Time: 23:54:55
+-- On error(s), send source (compiled) file to 4E534B@gmail.com
+
+hitfx="plasma_hit_spray";
+bulletfx="plasma_bomb_tracer";
+nopenetratefx="plasma_hit_spray";
+deathtype="deathPlasma";
+scartype="Plasma_Bomb/Plasma_Bomb";
+fire_sfx="WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH";
+hit_sfx="weapon/fighter/impact/WEAPON_FIGHTER_Pea_shooter_Hit";
+firefx="muzzle_flash_combo_plasma_kpr";
+hit_clamp={1,
+	1};
+

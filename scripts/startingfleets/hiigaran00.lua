@@ -67,6 +67,16 @@ PersistantData = {
       size = 1,
       number = 1, 
     },
+	{
+      type = "hgn_crossbow_cruiser",
+      subsystems = {
+      },
+      shiphold = {
+      },
+      name = "",
+      size = 1,
+      number = 1, 
+    },
 	
 	-- Frigate --
 	{

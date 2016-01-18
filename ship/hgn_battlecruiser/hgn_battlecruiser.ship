@@ -1,14 +1,11 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1538"
 NewShipType.sobDescription = "$1539"
-NewShipType.maxhealth = 1000000
+NewShipType.maxhealth = 240000
 NewShipType.regentime = 2000
 NewShipType.minRegenTime = 2000
-NewShipType.sideArmourDamage = 0.50
-NewShipType.rearArmourDamage = 0.50
-NewShipType.topArmourDamage = 0.50
-NewShipType.bottomArmourDamage = 0.50
-NewShipType.frontArmourDamage = 0.50
+NewShipType.sideArmourDamage=1.2
+NewShipType.rearArmourDamage=1.2
 NewShipType.isTransferable = 1
 NewShipType.useEngagementRanges = 1
 NewShipType.unitCapsNumber = 8
@@ -67,9 +64,6 @@ NewShipType.mirrorAboveManeuver = "ImmelMann_speedy, OneEightyDegRightTurn, OneE
 NewShipType.mirrorBelowManeuver = "Split_S_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, Split_S_speedy, Split_S_speedy, Split_S_speedy"
 NewShipType.specialTurnLeftManeuver = "NinetyDegLeftTurn, None, None"
 NewShipType.specialTurnRightManeuver = "NinetyDegRightTurn, None, None"
-NewShipType.testManeuver1 = "RollCW"
-NewShipType.testManeuver2 = "RollCCW"
-NewShipType.testManeuver3 = "Loop"
 NewShipType.BuildFamily = "Battlecruiser_Hgn"
 NewShipType.AttackFamily = "BigCapitalShip"
 NewShipType.DockFamily = "BattleCruiser"
@@ -147,23 +141,28 @@ NewShipType.launchFormation = "delta"
 addAbility(NewShipType,"ShipHold",1,0,5,"rallypoint","Fighter, Corvette",25,{Fighter = "12"},{Corvette = "75"});
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",1,2,500,1000,0,3);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","flyby_destroyer",
-{Fighter = "MoveToTargetAndShoot"},
-{Corvette = "MoveToTargetAndShoot"},
-{Munition = "MoveToTargetAndShoot"},
-{SubSystem = "FrontalVsSubSystem"});
+addAbility(NewShipType,"HyperSpaceCommand",0,2,500,1000,0,3);
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
-addAbility(NewShipType,"CanBuildShips",1,"Fighter_Hgn, SubSystem_Hgn","SubSystemModule, Fighter");
+addAbility(NewShipType,"CanBuildShips",1,"SubSystem_Hgn","SubSystemModule");
 addAbility(NewShipType,"CanBeCaptured",160,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
-addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
+addAbility(NewShipType,"DefenseFieldAbility", 0, 0, 800, 500, 500, 1, 10, 0, "defensefield_sphere_spray")
+addAbility(NewShipType,"DefenseFieldShieldAbility", 1, 800, 0, 0)
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
+addAbility(NewShipType,"MinelayerAbility",1,3.5);
+
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","flyby_destroyer",
+    {Fighter = "MoveToTargetAndShoot"},
+    {Corvette = "MoveToTargetAndShoot"},
+    {Frigate = "MoveToTargetAndShoot"},
+    {Munition = "JustShoot"},
+    {SubSystem = "FrontalVsSubSystem"}
+);
+
 LoadModel(NewShipType,1);
 
-StartShipWeaponConfig(NewShipType,"hgn_nuclearmissile","Weapon_pulsar","Weapon_pulsar");
 StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar","Weapon_pulsar");
 StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar2","Weapon_pulsar2");
 StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar3","Weapon_pulsar3");

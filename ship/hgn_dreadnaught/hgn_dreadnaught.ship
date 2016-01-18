@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1540"
 NewShipType.sobDescription = "$1541"
-NewShipType.maxhealth = 800000
+NewShipType.maxhealth = 500000
 NewShipType.regentime = 0
 NewShipType.minRegenTime = 8000
 NewShipType.sideArmourDamage = 1.2
@@ -141,10 +141,17 @@ NewShipType.dockQueueSelectionOccupiedMultiplier = 100000
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,2,500,1000,0,3);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.2,"Munition, BigCapitalShip, SmallCapitalShip, Capturer, Frigate, SubSystem, Mothership, Corvette, Fighter, Utility","Frontal",{Fighter = "MoveToTargetAndShoot"},{Corvette = "MoveToTargetAndShoot"},{Frigate = "MoveToTargetAndShoot"},{Munition = "MoveToTargetAndShoot"},{SubSystem = "FrontalVsSubSystem"});
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.2,"Munition, BigCapitalShip, SmallCapitalShip, Capturer, Frigate, SubSystem, Mothership, Corvette, Fighter, Utility","Frontal",
+    {Fighter = "MoveToTargetAndShoot"},
+    {Corvette = "MoveToTargetAndShoot"},
+    {Frigate = "MoveToTargetAndShoot"},
+    {Munition = "JustShoot"},
+    {SubSystem = "FrontalVsSubSystem"}
+);
 addAbility(NewShipType,"GuardCommand",74,3000,1400);
 addAbility(NewShipType,"CanBeCaptured",160,0.5);
 addAbility(NewShipType,"CanBeRepaired");
+addAbility(NewShipType,"MinelayerAbility",1,3.5);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_HullDefense1","Weapon_HullDefense1");
 StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_HullDefense2","Weapon_HullDefense2");

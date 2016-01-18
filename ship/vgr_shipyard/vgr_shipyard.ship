@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1628"
 NewShipType.sobDescription = "$1629"
-NewShipType.maxhealth = 1000000
+NewShipType.maxhealth = 175000
 NewShipType.regentime = 2000
 NewShipType.minRegenTime = 750
 NewShipType.frontArmourDamage = 0.85
@@ -117,8 +117,8 @@ NewShipType.blobName = "$1676"
 NewShipType.blobNamePriority = 75
 NewShipType.SMHighlightDistMin = 20000
 NewShipType.SMHighlightDistMax = 30000
-addAbility(NewShipType, "MoveCommand", 1, 0)
-addAbility(NewShipType, "CanDock", 1, 0)
+addAbility(NewShipType,"MoveCommand",1,0);
+addAbility(NewShipType,"CanDock",1,0);
 NewShipType.dockTimeBetweenTwoFormations = 1
 NewShipType.dockTimeBeforeStart = 2
 NewShipType.dockNrOfShipsInDockFormation = 1
@@ -126,7 +126,7 @@ NewShipType.dockFormation = "delta"
 NewShipType.queueFormation = "dockline"
 NewShipType.dontDockWithOtherRaceShips = 1
 NewShipType.ignoreRaceWhenDocking = 0
-addAbility(NewShipType, "CanLaunch")
+addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations = 1
 NewShipType.launchTimeBeforeStart = 2
 NewShipType.launchNrOfShipsInDockFormation = 1
@@ -142,6 +142,7 @@ addAbility(NewShipType,"CanBuildShips",1,"Fighter_Vgr, Corvette_Vgr, Frigate_Vgr
 addAbility(NewShipType,"CanBeCaptured",300,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap"); 
 addAbility(NewShipType,"CanBeRepaired","RepCap");
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
 addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
@@ -174,16 +175,6 @@ StartShipHardPointConfig(NewShipType,"Generic 6","HardPoint_System6","System","G
 StartShipHardPointConfig(NewShipType,"Sensors1","HardPoint_Sensors","System","Sensors","Destroyable","","Vgr_MS_Sensors_AdvancedArray","Vgr_MS_Sensors_DetectHyperspace","Vgr_MS_Sensors_DetectCloaked","","","","","");
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Vgr_SY_Innate_Engine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Resource","Hardpoint_Resource","System","Innate","Damageable","Vgr_SY_Innate_Resource","","","","","","","","");
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.34,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg02",1, 0.13,0,0,0, 30,-20,200,25,300,150,85,50,0,0,0,85,0,0,0,50);
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.12,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg05",1, 0.11,0,0,0, 25,10,-100,30,35,75,62,75,0,0,0,80,0,0,0,50);
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg01",1, 0.10,0,0,0, 60,30,150,25,35,125,65,75,0,0,0,60,0,0,0,50);
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml01",1, 0.06,0,0,0, 80,125,60,75,125,80,65,75,0,0,0,60,0,0,0,50);
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml02",1, 0.05,0,0,0, 25,0,-125,50,80,35,120,75,0,0,0,60,0,0,0,50);
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml03",1, 0.04,0,0,0, 60,95,200,50,15,200,20,125,0,0,0,60,0,0,0,50);
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml04",1, 0.03,0,0,0, 10,60,-300,25,35,80,65,75,0,0,0,60,0,0,0,50);
-SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml05",1, 0.02,0,0,0, 60,10,30,75,35,25,65,75,0,0,0,60,0,0,0,50);
 NewShipType.battleScarCoverage = 4
 NewShipType.battleScarBudgetLow  =  1200
 NewShipType.battleScarBudgetNext  =  1800

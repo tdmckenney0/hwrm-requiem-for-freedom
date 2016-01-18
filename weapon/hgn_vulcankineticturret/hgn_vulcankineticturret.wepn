@@ -1,0 +1,42 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Plasma_Bomb","Normal Only",1200,1800,0,0,0,0,1,1,0,8,0,0,0,0,260,40,0.1,"Normal",0,0,0)
+
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",135,135,"")
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"hgn_PlasmaBurst")
+AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"hgn_PlasmaBurst")
+AddWeaponResult(NewWeaponType,"Hit","Push","Target",45,45,"")
+
+setAngles(NewWeaponType,0,-180,180,-10,60)
+
+setMiscValues(NewWeaponType,1.5,0.5)
+
+setPenetration(NewWeaponType,5,1,
+{Unarmoured=1,},
+{LightArmour=1,},
+{MediumArmour=1,},
+{HeavyArmour=1,},
+{SubSystemArmour=2.5,},
+{TurretArmour=0.45,},
+{ResArmour=0.2,},
+{MoverArmour=1,},
+{PlanetKillerArmour=0,},
+{MineArmour=1,},
+{ChunkArmour=1,})
+
+setAccuracy(NewWeaponType,1,
+{Fighter=0.8,},
+{Corvette=0.85,},
+{Frigate=1, damage=1,},
+{Utility=1,},
+{munition=7,},
+{SmallCapitalShip=1, damage=1,},
+{BigCapitalShip=0.6, damage=1,},
+{Mothership=1,},
+{Emplacement=1,},
+{UnAttackable=1,},
+{SubSystem=1,},
+{Resource=1,},
+{ResourceLarge=1, damage=1,},
+{Capturer=1,},
+{Chimera=1,})
+
+addAnimTurretSound(NewWeaponType, "Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON")

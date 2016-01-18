@@ -1,0 +1,47 @@
+
+--Local_Desc - Description of this package
+--Package_Sym - Shared name for packages with the same catagory
+--Package_Desc - Description - may move to a 'package' desc file...
+
+Root = "DATA:\\LevelData\\Multiplayer\\the_price_of_freedom"
+
+ExtFilter = "levels_dm,levels_hw2,levels_dm_hw2,levels_other"
+
+--Tags - Set single tags for all levels...
+Tags = "dm,hw2,dm_hw2,other"
+
+--TagSets - Set groups of tags for all levels (defined in Scripts/Tags/*.tags) - makes bulk editing faster...
+--TagSets = "hw2,other"
+
+LevelList = {
+	{
+		Tags = "2p",
+		Name = "2p_Orions_Bridge",
+		Desc = "Orion's Bridge",
+		MaxPlayers = 2,
+	},
+    {
+		Tags = "3p",
+		Name = "3p_Suckerpunch",
+		Desc = "Suckerpunch",
+		MaxPlayers = 3,
+	},
+    {
+		Tags = "4p",
+		Name = "4p_Gumball",
+		Desc = "Gumball",
+		MaxPlayers = 4,
+	},
+    {
+		Tags = "5p",
+		Name = "5p_Orbit",
+		Desc = "Orbit",
+		MaxPlayers = 5,
+	},
+    {
+		Tags = "6p",
+		Name = "6p_Middle_Ground",
+		Desc = "Middle Ground",
+		MaxPlayers = 6,
+	},
+}

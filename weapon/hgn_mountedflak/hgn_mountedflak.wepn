@@ -1,7 +1,7 @@
-  StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Small","Normal",1800,2200,0,0,0,0,1,1,1,1.5,0,0,1,1,120,120,0.1,"Normal",1,0,0)
+  StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","dread_bomb","Normal",1800,2200,0,0,0,0,1,1,1,1.5,0,0,1,1,120,120,0.1,"Normal",1,0,0)
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",150,200,"")
-AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"HGN_FlakBurst")
-AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"HGN_FlakBurst")
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"hgn_plasmaburst")
+AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"hgn_plasmaburst")
 
 
 setPenetration(NewWeaponType,5,0,

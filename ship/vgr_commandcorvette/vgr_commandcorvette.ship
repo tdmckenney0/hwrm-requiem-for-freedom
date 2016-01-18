@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1616"
 NewShipType.sobDescription = "$1617"
-NewShipType.maxhealth = 5000
+NewShipType.maxhealth = 600
 NewShipType.regentime = 0
 NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
@@ -110,8 +110,8 @@ NewShipType.selectionLimit = 150000
 NewShipType.preciseATILimit = 0
 NewShipType.selectionPriority = 75
 NewShipType.militaryUnit = 0
-addAbility(NewShipType, "MoveCommand", 1, 0)
-addAbility(NewShipType, "CanDock", 1, 1)
+addAbility(NewShipType,"MoveCommand",1,0);
+addAbility(NewShipType,"CanDock",1,1);
 NewShipType.dockTimeBetweenTwoFormations = 0.5
 NewShipType.dockTimeBeforeStart = 0.5
 NewShipType.dockNrOfShipsInDockFormation = 1
@@ -119,7 +119,7 @@ NewShipType.dockFormation = "n_delta"
 NewShipType.queueFormation = "dockline"
 NewShipType.dontDockWithOtherRaceShips = 0
 NewShipType.ignoreRaceWhenDocking = 0
-addAbility(NewShipType, "CanLaunch")
+addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations = 0.5
 NewShipType.launchTimeBeforeStart = 1.5
 NewShipType.launchNrOfShipsInDockFormation = 1

@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1502"
 NewShipType.sobDescription = "$1503"
-NewShipType.maxhealth = 3500
+NewShipType.maxhealth = 350
 NewShipType.regentime = 0
 NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
@@ -130,18 +130,20 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "n_delta"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
-addAbility(NewShipType,"CanAttack",1,5,1,0,0.35,1,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership","FlyBy_Interceptor_vs_Frigate",
-{Fighter = "Flyby_Interceptor_vs_Fighter"},
-{SubSystem = "TopAttack_Interceptor_vs_Subsystem"},
-{SmallCapitalShip = "Flyby_Interceptor_vs_CapShip"},
-{BigCapitalShip = "Flyby_Interceptor_vs_CapShip"},
-{Mothership = "Flyby_Interceptor_vs_Mothership"},
-{ResourceLarge = "Flyby_Interceptor_vs_ResourceLarge"});
+addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership","FlyBy_Interceptor_vs_Frigate",
+    {Fighter = "Flyby_Interceptor_vs_Fighter"},
+    {SubSystem = "TopAttack_Interceptor_vs_Subsystem"},
+    {SmallCapitalShip = "Flyby_Interceptor_vs_CapShip"},
+    {BigCapitalShip = "Flyby_Interceptor_vs_CapShip"},
+    {Mothership = "Flyby_Interceptor_vs_Mothership"},
+    {ResourceLarge = "Flyby_Interceptor_vs_ResourceLarge"},
+    {Munition = "MoveToTargetAndShoot"}
+);
 addAbility(NewShipType, "GuardCommand", 1, 3000, 500)
 addAbility(NewShipType, "HyperSpaceCommand",0,0,250,250,0,3.141592653)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
 addAbility(NewShipType, "RetireAbility", 1, 0)
-addAbility(NewShipType,"MinelayerAbility",1,3.5)
+addAbility(NewShipType, "MinelayerAbility",1,3.5);
 
 LoadModel(NewShipType,1);
 

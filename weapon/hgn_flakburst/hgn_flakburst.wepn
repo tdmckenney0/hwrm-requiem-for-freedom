@@ -5,7 +5,7 @@
 --
 StartWeaponConfig(NewWeaponType, "Fixed", "SphereBurst", "ArtilleryBurst", "Normal", 0, 0, 80, 2, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 1, 0, 0)
 
-AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 2000, 2500, "")
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 200, 250, "")
 
 setPenetration(NewWeaponType,5,0,
 {Unarmoured=1},

@@ -1,0 +1,35 @@
+-- LuaDC version 0.9.20
+-- 11/11/2008 7:34:55 PM
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+effects = 
+{ 
+    animations = 
+    { 
+        animation1 = 
+        { 
+            name = "Weapon_IonCan1", 
+            length = 1, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, }, }, 
+    events = 
+    { 
+        event1 = { 
+                { "anim", "Weapon_IonCan1", }, 
+                { "animtime", "0", }, 
+                { "marker", "Weapon_IonCan1_Muzzle", }, 
+                { "fx", "muzzle_flash_combo_small_capital_dread", }, 
+                { "sound", "WEAPON/MEGASHIP/FIRE/DWEAPON_MOVER_KINETIC_AUTOGUN_SHELL", }, 
+                { "fx_scale", "3", }, }, 
+        event2 = 
+            { 
+                { "anim", "Weapon_IonCan1", }, 
+                { "animtime", "0.2", }, 
+                { "marker", "vent1", }, 
+                { "fx", "ion_cannon_steam_spray", }, 
+            }, }, }

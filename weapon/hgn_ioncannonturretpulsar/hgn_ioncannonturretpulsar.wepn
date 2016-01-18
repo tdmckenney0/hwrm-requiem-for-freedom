@@ -1,6 +1,6 @@
 StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","ionbeam_kpr","Special Attack",0,7500,0,3,1,0,20,1,1,10,0,0,1,0,360,360,0.1,"Normal",1,0,0)
 
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",1000,1250,"")
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,125,"")
 
 setAngles(NewWeaponType,0,-180,180,-1,60)
 

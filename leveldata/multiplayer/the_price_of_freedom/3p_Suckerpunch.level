@@ -1,0 +1,123 @@
+levelDesc = "Suckerpunch"
+maxPlayers = 3
+player = {}
+
+player[0] =
+{
+    id = 0,
+    name = "",
+    resources = 10000,
+    raceID = 1,
+    startPos = 0, }
+player[1] =
+{
+    id = 1,
+    name = "",
+    resources = 10000,
+    raceID = 2,
+    startPos = 0, }
+player[2] =
+{
+    id = 2,
+    name = "",
+    resources = 10000,
+    raceID = 2,
+    startPos = 0, }
+    
+function DetermChunk()
+
+	addPoint("StartPos0", {12, 0, 35000}, {0, 180, 0})
+	addPoint("StartPos1", {-8284, 0, -27000}, {0, 0, 0})
+	addPoint("StartPos2", {2837, 0, -3000}, {0, 0, 0})
+
+	addAsteroid("Asteroid_3",
+	{ 8127, -249, -30277, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 8524, -887, -30277, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 8124, -593, -29938, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 8025, -1176, -30553, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 15227, 3565, -12425, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 15647, 3565, -12439, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 15705, 3382, -11913, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 15263, 3979, -12722, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 15766, 4003, -12259, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 15263, 3673, -11988, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 15415, 3219, -12580, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 14966, 3433, -12219, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_4",
+	{ -3566, -1622, 28862, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_4",
+	{ -4165, -2183, 28213, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -3579, -1944, 28178, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -4273, -1722, 28650, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_4",
+	{ -1470, 123, 13289, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -862, 530, 13305, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -7475, 903, -12262, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -7221, 1245, -13045, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -7630, 1396, -13045, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -7625, 412, -12655, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -6855, 760, -12727, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -7545, 931, -12769, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 3944, 349, -1777, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 4422, 349, -1777, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 4422, 165, -1265, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 3980, 762, -2074, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 4483, 787, -1612, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 3980, 457, -1341, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 4132, 3, -1932, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ 3683, 217, -1571, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_5",
+	{ -9658, 642, 2666, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_4",
+	{ -9175, 404, 2894, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -9757, 869, 2275, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -9123, 1263, 2457, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -9487, 1263, 2887, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_4",
+	{ -1170, 123, 13125, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -945, 249, 13498, }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3",
+	{ -1504, -38, 12767, }, 100, 0, 0, 0, 0)
+	
+	setWorldBoundsInner({ 0, 0, 0,}, { 44312.25, 25062.31, 44312.25, })
+end
+
+function NonDetermChunk()
+ 
+    setLevelShadowColour(0, 0, 0, 0)
+    loadBackground("ez04")
+    setSensorsManagerCameraDistances(10000, 45000)
+
+end

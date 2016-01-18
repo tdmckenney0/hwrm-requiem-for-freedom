@@ -1,13 +1,11 @@
 StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","EMP","Normal",0,0,50,2,0,0,10,0,0,0,0,0,0,0,0,0,0.1,"Normal",1,0,0)
 
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 125, 125, "")
+
 setAngles(NewWeaponType,0,0,0,0,0)
 
 setPenetration(NewWeaponType,5,1,
 {Unarmoured=1,},
-{SuperConducting=1,},
-{AntiChemical=1,},
-{AntiMassImpact=1,},
-{Composite=1,},
 {LightArmour=1,},
 {MediumArmour=1,},
 {HeavyArmour=1,},

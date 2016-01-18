@@ -3,6 +3,7 @@ dofilepath("data:ui/newui/Styles/HWRM_Style/HWRMDefines.lua")
 dofilepath("data:ui/newui/Styles/HWRM_Style/ControlConstructors.lua")
 dofilepath("data:ui/newui/Background/logo.lua")
 dofilepath("data:ui/newui/Main/ExButtons.lua")
+dofilepath("data:scripts/tpof_version.lua")
 
 LAYOUT_MENU_BUTTONS = 
 {
@@ -84,7 +85,7 @@ NewMainMenu = {
 		type = "RmWindow",
 		name = "MainMenu_Panel",
 		WindowTemplate = PANEL_WINDOWSTYLE,
-		TitleText = "A REQUIEM FOR FREEDOM", -- "GAME MENU", "$5577",
+		TitleText = "THE PRICE OF FREEDOM", -- "GAME MENU", "$5577",
 
 		Layout = {					
 				pos_XY = { x=0.7, y = 0.5,  xr="par", yr = "par" },	
@@ -245,7 +246,7 @@ NewMainMenu = {
 				sizetype = "contain",
 				
 				Text = {	
-					text = "v0.4", -- $1221
+					text = TPOF_VERSION, -- $1221
 					font = "ButtonFont",
 					hAlign = "Right",
 					vAlign = "Top",

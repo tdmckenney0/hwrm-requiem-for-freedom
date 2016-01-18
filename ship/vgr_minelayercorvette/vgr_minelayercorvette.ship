@@ -133,11 +133,19 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="n_delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"Munition, BigCapitalShip, SmallCapitalShip, Frigate, Corvette, Fighter, Mothership","FlyBy_Corvette_vs_Corvette",{Fighter="FlyBy_Corvette_vs_Corvette"},{Mothership="flyby_VCorvette_vs_Mothership"},{SmallCapitalShip="FlyBy_VCorvette_vs_CapShip"},{BigCapitalShip="FlyBy_VCorvette_vs_CapShip"},{SubSystem="FrontalVsSubSystem_Corvette"},{Corvette="FlyBy_Corvette_vs_Corvette"});
+addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"Munition, BigCapitalShip, SmallCapitalShip, Frigate, Corvette, Fighter, Mothership","FlyBy_Corvette_vs_Corvette",
+    {Fighter="FlyBy_Corvette_vs_Corvette"},
+    {Mothership="flyby_VCorvette_vs_Mothership"},
+    {Munition = "MoveToTargetAndShoot"},
+    {SmallCapitalShip="FlyBy_VCorvette_vs_CapShip"},
+    {BigCapitalShip="FlyBy_VCorvette_vs_CapShip"},
+    {SubSystem="FrontalVsSubSystem_Corvette"},
+    {Corvette="FlyBy_Corvette_vs_Corvette"}
+);
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_MineLayer","Weapon_Mine","");
 StartShipWeaponConfig(NewShipType,"Vgr_MinelayerCannon","Weapon_ClearMine","Weapon_ClearMine");

@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1608"
 NewShipType.sobDescription = "$1609"
-NewShipType.maxhealth = 3950
+NewShipType.maxhealth = 300
 NewShipType.regentime = 0
 NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
@@ -128,18 +128,21 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "n_delta"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
-addAbility(NewShipType,"CanAttack",1,7,1,0,0.35,1,"Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Corvette, Fighter, Utility","FlyBy_Bomber_vs_Frigate",
-{Fighter = "Flyby_Bomber_vs_Fighter"},
-{SubSystem = "TopAttack_Bomber_vs_Subsystem"},
-{SmallCapitalShip = "Strafe_Bomber_vs_Capship"},
-{BigCapitalShip = "Strafe_Bomber_vs_Capship"},
-{Mothership = "Flyby_Bomber_vs_Mothership"},
-{ResourceLarge = "Flyby_Bomber_vs_ResourceLarge"},
-{Corvette = "Flyby_Bomber_vs_Fighter"},
-{Chimera = "Flyby_VBomber_vs_Chimera"});
+addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"Munition, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Corvette, Fighter, Utility","FlyBy_Bomber_vs_Frigate",
+    {Fighter = "Flyby_Bomber_vs_Fighter"},
+    {SubSystem = "TopAttack_Bomber_vs_Subsystem"},
+    {SmallCapitalShip = "Strafe_Bomber_vs_Capship"},
+    {BigCapitalShip = "Strafe_Bomber_vs_Capship"},
+    {Mothership = "Flyby_Bomber_vs_Mothership"},
+    {ResourceLarge = "Flyby_Bomber_vs_ResourceLarge"},
+    {Corvette = "Flyby_Bomber_vs_Fighter"},
+    {Munition = "MoveToTargetAndShoot"},
+    {Chimera = "Flyby_VBomber_vs_Chimera"}
+);
 addAbility(NewShipType, "GuardCommand", 1, 3000, 500)
 addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
 addAbility(NewShipType, "RetireAbility", 1, 0)
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType, 1)
 StartShipWeaponConfig(NewShipType, "vgr_bomberplasmadriver", "Weapon_L", "Weapon_L")
 StartShipWeaponConfig(NewShipType, "vgr_bomberplasmadriver", "Weapon_R", "Weapon_R")

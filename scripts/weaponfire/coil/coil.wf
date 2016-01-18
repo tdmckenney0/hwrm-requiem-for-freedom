@@ -9,7 +9,6 @@ nopenetratefx = "dmg_cloud_spray_large"
 deathtype = "deathCannon"
 scartype = "Kinetic_Large/Kinetic_Large"
 firefx="muzzle_flash_combo_small_capital_scale"
-fire_sfx = "customwpn/medgun_atmosphere"
 hit_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_FLECHETTE_CANNON_HIT"
 nopenetrate_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_FLECHETTE_CANNON_HIT"
 hit_clamp = 

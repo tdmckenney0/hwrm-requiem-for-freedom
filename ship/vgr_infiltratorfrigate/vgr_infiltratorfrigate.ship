@@ -1,9 +1,3 @@
---===========================================================================
---  Purpose : Lua definition file for Homeworld Ship.
---            Contains loading information and flight dynamics information (among other things?)
---
---  Copyright Relic Entertainment, Inc.  All rights reserved.
---===========================================================================
 NewShipType = StartShipConfig()
 NewShipType.displayedName="$1620"
 NewShipType.sobDescription="$1621"
@@ -138,8 +132,14 @@ NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"CaptureCommand",1,200);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 addAbility(NewShipType,"HyperSpaceCommand",0,1,500,1000,0,3);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Corvette, Fighter, Mothership","Frontal",{Fighter="MoveToTargetAndShoot"},{Corvette="MoveToTargetAndShoot"},{Munition="MoveToTargetAndShoot"},{SubSystem="FrontalVsSubSystem"});
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Corvette, Fighter, Mothership","Frontal",
+    {Fighter="MoveToTargetAndShoot"},
+    {Corvette="MoveToTargetAndShoot"},
+    {Munition="MoveToTargetAndShoot"},
+    {SubSystem="FrontalVsSubSystem"}
+);
 addAbility(NewShipType,"GuardCommand",1,3000,600);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CanBeCaptured",45,0.1,"CapCap");

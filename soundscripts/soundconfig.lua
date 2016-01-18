@@ -61,7 +61,7 @@ SpeechVolDuckingLevel = 0.2
 
 -- FEMusic: string, the file to use as the Front End Music Track, also is the default mission music if nothing is selected
 -- FEMusic = "data:sound/music/ambient/amb_03"
-FEMusic = "data:sound/music/slipstream/02_ambient"
+FEMusic = "data:sound/music/staging/ambient"
 
 -- FEBattleMusic: string, the file to use as the battle music during combat
 FEBattleMusic = "data:sound/music/battle/battle_01"

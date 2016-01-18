@@ -1,8 +1,3 @@
--- LuaDC version 0.9.20
--- 11/11/2008 7:35:09 PM
--- LuaDC by Age2uN
--- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
---
 NewSubSystemType = StartSubSystemConfig()
 NewSubSystemType.displayedName = "$2048"
 NewSubSystemType.sobDescription = "$2047"
@@ -34,7 +29,7 @@ NewSubSystemType.timeToBuild = 10
 NewSubSystemType.isResearch = 0
 NewSubSystemType.visible = 1
 NewSubSystemType.innate = 1
-LoadHODFile(NewSubSystemType, 1)
+LoadHODFile(NewSubSystemType,1);
 NewSubSystemType.BuildFamily = "SubSystem_Vgr"
 NewSubSystemType.AttackFamily = "SubSystem"
 NewSubSystemType.DockFamily = "CantDock"

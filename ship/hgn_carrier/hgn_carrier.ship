@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1542"
 NewShipType.sobDescription = "$1543"
-NewShipType.maxhealth = 500000
+NewShipType.maxhealth = 50000
 NewShipType.regentime = 2000
 NewShipType.minRegenTime = 2000
 NewShipType.sideArmourDamage = 1.2
@@ -139,7 +139,8 @@ addAbility(NewShipType,"ShipHold",1,40,10,"rallypoint","Fighter,Corvette,Utility
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,1,400,800,0,3);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Fighter, Corvette, Frigate,  SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Munition, Fighter, Corvette, Frigate,  SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
+addAbility(NewShipType,"MinelayerAbility",1,3.5);
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
 addAbility(NewShipType,"CanBuildShips",1,"Fighter_Hgn, Corvette_Hgn, Frigate_Hgn, Utility_Hgn, Platform_Hgn, SubSystem_Hgn,Shipyard_Hgn, Probe_Hgn","Utility, Fighter, Corvette, Frigate, Platform, SubSystemModule, SubSystemSensors, Capital");
 addAbility(NewShipType,"CanBeCaptured",160,0.5,"CapCap");

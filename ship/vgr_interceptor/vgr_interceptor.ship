@@ -1,7 +1,7 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1602"
 NewShipType.sobDescription = "$1603"
-NewShipType.maxhealth = 3550
+NewShipType.maxhealth = 30
 NewShipType.regentime = 0
 NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
@@ -115,8 +115,8 @@ NewShipType.selectionLimit = 150000
 NewShipType.preciseATILimit = 0
 NewShipType.selectionPriority = 75
 NewShipType.militaryUnit = 1
-addAbility(NewShipType, "MoveCommand", 1, 0)
-addAbility(NewShipType, "CanDock", 1, 1)
+addAbility(NewShipType,"MoveCommand",1,0);
+addAbility(NewShipType,"CanDock",1,1);
 NewShipType.dockTimeBetweenTwoFormations = 0.5
 NewShipType.dockTimeBeforeStart = 0.5
 NewShipType.dockNrOfShipsInDockFormation = 1
@@ -124,23 +124,26 @@ NewShipType.dockFormation = "n_delta"
 NewShipType.queueFormation = "ScatterNarrow"
 NewShipType.dontDockWithOtherRaceShips = 0
 NewShipType.ignoreRaceWhenDocking = 0
-addAbility(NewShipType, "CanLaunch")
+addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations = 0.5
 NewShipType.launchTimeBeforeStart = 1.5
 NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "n_delta"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
-addAbility(NewShipType,"CanAttack",1,7,1,0,0.35,1,"Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership","FlyBy_VInterceptor_vs_Frigate",
-{Fighter = "Flyby_VInterceptor_vs_Fighter"},
-{SubSystem = "TopAttack_VInterceptor_vs_Subsystem"},
-{SmallCapitalShip = "Flyby_VInterceptor_vs_CapShip"},
-{BigCapitalShip = "Flyby_VInterceptor_vs_CapShip"},
-{Mothership = "Flyby_VInterceptor_vs_Mothership"},
-{ResourceLarge = "Flyby_VInterceptor_vs_ResourceLarge"});
+addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership","FlyBy_VInterceptor_vs_Frigate",
+    {Fighter = "Flyby_VInterceptor_vs_Fighter"},
+    {SubSystem = "TopAttack_VInterceptor_vs_Subsystem"},
+    {Munition = "MoveToTargetAndShoot"},
+    {SmallCapitalShip = "Flyby_VInterceptor_vs_CapShip"},
+    {BigCapitalShip = "Flyby_VInterceptor_vs_CapShip"},
+    {Mothership = "Flyby_VInterceptor_vs_Mothership"},
+    {ResourceLarge = "Flyby_VInterceptor_vs_ResourceLarge"}
+);
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"RetireAbility",1,0);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"vgr_autocannon","Weapon_LongGun","Weapon_LongGun");
 addShield(NewShipType,"EMP",75,20);

@@ -1,9 +1,3 @@
---===========================================================================
---  Purpose : Lua definition file for Homeworld Ship.
---            Contains loading information and flight dynamics information (among other things?)
---
---  Copyright Relic Entertainment, Inc.  All rights reserved.
---===========================================================================
 NewSubSystemType = StartSubSystemConfig()
 NewSubSystemType.displayedName="$2030"
 NewSubSystemType.sobDescription="$2031"
@@ -42,3 +36,4 @@ NewSubSystemType.DockFamily="CantDock"
 NewSubSystemType.DisplayFamily="SubSystemModule"
 NewSubSystemType.ArmourFamily="SubSystemArmour"
 AddSubSystemMultiplier(NewSubSystemType,"Speed","ThisShipOnly","Linear",1,0,0);
+AddSubSystemAbility(NewSubSystemType,"Hyperspace",1,"ThisShipOnly", 0);

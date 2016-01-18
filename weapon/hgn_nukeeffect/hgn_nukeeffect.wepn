@@ -1,9 +1,8 @@
 StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","explosion","Normal",0,0,75,2,0,0,10,0,0,0,0,0,0,0,0,0,0.1,"Normal",1,0,0)
 
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",10000,25000,"")
-AddWeaponResult(NewWeaponType,"Hit","Push","Target",25,25,"")
-AddWeaponResult(NewWeaponType,"Hit","Disable","Target",10,10,"")
-AddWeaponResult(NewWeaponType,"","","",0,0,"")
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target", 2500, 2500,"")
+AddWeaponResult(NewWeaponType,"Hit","Push","Target", 75, 75,"")
+AddWeaponResult(NewWeaponType,"Hit","Disable","Target", 15, 15,"")
 
 setAngles(NewWeaponType,0,0,0,0,0)
 

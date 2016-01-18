@@ -1,6 +1,6 @@
 StartWeaponConfig(NewWeaponType,"Gimble","InstantHit","KprBeam","Normal",0,8500,0,0.4,0,0,2,1,0,1.5,0,0,1,1,40,20,0.1,"Normal",1,0,1000)
 
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",1000,1000,"")
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,100,"")
 
 setAngles(NewWeaponType,30,0,0,0,0)
 

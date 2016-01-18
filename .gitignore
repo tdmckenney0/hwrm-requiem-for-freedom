@@ -46,3 +46,6 @@ Temporary Items
 Animatics/
 *.big
 *.exe
+
+# WinMerge Backups
+*.bak

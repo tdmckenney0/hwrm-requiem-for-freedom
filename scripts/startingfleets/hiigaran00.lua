@@ -16,8 +16,29 @@ PersistantData = {
          number = 1,
 	},
 	{
-         type = "Hgn_Shipyard",
-         subsystems = {},
+         type = "Hgn_Carrier",
+         subsystems = {
+            {
+                index = 0,
+                name = "HGN_C_PRODUCTION_FIGHTER",
+            },
+            {
+                index = 0,
+                name = "HGN_C_PRODUCTION_CORVETTE",
+            },
+            {
+                index = 0,
+                name = "HGN_C_MODULE_RESEARCH", 
+            },
+            {
+                index = 0,
+                name = "HGN_C_MODULE_HYPERSPACE",
+            },
+            {
+                index = 0,
+                name = "HGN_C_SENSORS_ADVANCEDARRAY",
+            },
+         },
          shiphold = {},
          name = "",
          number = 1,

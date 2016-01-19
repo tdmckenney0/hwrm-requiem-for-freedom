@@ -10,8 +10,25 @@ PersistantData = {
          number = 6,
 	},
 	{
-         type = "Vgr_Shipyard",
-         subsystems = {},
+         type = "Vgr_Carrier",
+         subsystems = {
+            {
+                index = 0,
+                name = "VGR_C_PRODUCTION_CORVETTE",
+            },
+            {
+                index = 0,
+                name = "VGR_C_MODULE_RESEARCH", 
+            },
+            {
+                index = 0,
+                name = "VGR_C_MODULE_HYPERSPACE",
+            },
+            {
+                index = 0,
+                name = "VGR_C_SENSORS_ADVANCEDARRAY",
+            },
+         },
          shiphold = {},
          name = "",
          number = 1,

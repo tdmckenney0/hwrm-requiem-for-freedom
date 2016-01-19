@@ -1,7 +1,0 @@
-hitfx = "nopen_generic"
-bulletfx = "nopen_generic"
-nopenetratefx = "nopen_generic"
-hit_clamp = {
-  1,
-  1,
-}

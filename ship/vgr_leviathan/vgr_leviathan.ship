@@ -145,7 +145,7 @@ addAbility(NewShipType,"HyperSpaceCommand",0,2,600,1200,0,3);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.2,"Munition, Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","flyby_destroyer",
     {Fighter = "MoveToTargetAndShoot"},
     {Corvette = "MoveToTargetAndShoot"},
-    {Frigate = "MoveToTargetAndShoot"},
+    {Frigate = "dogfight_capital"},
     {Munition = "MoveToTargetAndShoot"},
     {SubSystem = "MoveToTargetAndShoot"},
     {BigCapitalShip = "Circlestrafe"}
@@ -176,7 +176,7 @@ StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser1","");
 StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser2","");
 StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser3","");
 StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser4","");
-StartShipWeaponConfig(NewShipType,"Vgr_BCForwardWeapon","Weapon_BCUberPulse","Weapon_BCUberPulse");
+StartShipWeaponConfig(NewShipType,"vgr_superheavybeam","Weapon_BCUberPulse","Weapon_BCUberPulse");
 
 addShield(NewShipType, "EMP", 10000, 20)
 

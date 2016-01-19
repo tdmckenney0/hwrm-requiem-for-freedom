@@ -147,8 +147,8 @@ addAbility(NewShipType,"HyperSpaceCommand",0,2,500,1000,0,3);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","flyby_destroyer",
     {Fighter = "MoveToTargetAndShoot"},
     {Corvette = "MoveToTargetAndShoot"},
-    {Frigate = "MoveToTargetAndShoot"},
-    {Munition = "JustShoot"},
+    {Frigate = "dogfight_capital"},
+    {Munition = "MoveToTargetAndShoot"},
     {SubSystem = "MoveToTargetAndShoot"}
 );
 addAbility(NewShipType,"GuardCommand",1,3000,1000);

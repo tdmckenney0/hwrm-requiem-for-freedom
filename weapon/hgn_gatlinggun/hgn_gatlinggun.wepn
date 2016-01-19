@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","smallplasma","Normal",1200,5000,0,0,0,0,1,1,1,0.1,2,5,1,1,120,120,0.1,"Normal",0,0,0)
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","kinetic_rapid","Normal",1200,5000,0,0,0,0,1,1,1,0.1,2,5,1,1,120,120,0.1,"Normal",0,0,0)
 
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,250,"")
 AddWeaponResult(NewWeaponType,"Hit","Push","Target",1,2,"")

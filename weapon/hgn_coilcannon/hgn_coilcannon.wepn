@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Coil","Normal",5000,15000,0,0,0,0,1,1,1,1,1,10,0,1,150,150,0.1,"Normal",1,0,0)
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","kinetic_largesaj","Normal",5000,15000,0,0,0,0,1,1,1,1,1,10,0,1,150,150,0.1,"Normal",1,0,0)
 
 AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",250,500,"")
 AddWeaponResult(NewWeaponType,"Hit","Push","Target",50,55,"")

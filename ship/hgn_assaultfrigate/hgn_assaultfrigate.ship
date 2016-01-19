@@ -134,7 +134,7 @@ NewShipType.launchFormation = "delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0,1,200,500,0,3);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip","MoveToTargetAndShoot");
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip","dogfight_capital");
 addAbility(NewShipType,"GuardCommand",1,3000,600);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CanBeCaptured",30,0.1,"CapCap");

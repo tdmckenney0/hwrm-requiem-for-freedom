@@ -153,12 +153,12 @@ addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
 addAbility(NewShipType,"MinelayerAbility",1,3.5);
 
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","flyby_destroyer",
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition,Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","flyby_destroyer",
     {Fighter = "MoveToTargetAndShoot"},
     {Corvette = "MoveToTargetAndShoot"},
-    {Frigate = "MoveToTargetAndShoot"},
-    {Munition = "JustShoot"},
-    {SubSystem = "FrontalVsSubSystem"}
+    {Frigate = "dogfight_capital"},
+    {Munition = "MoveToTargetAndShoot"},
+    {SubSystem = "MoveToTargetAndShoot"}
 );
 
 LoadModel(NewShipType,1);
@@ -169,16 +169,16 @@ StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar3","Weapo
 StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar4","Weapon_pulsar4");
 StartShipWeaponConfig(NewShipType,"hgn_kineticburstcannon","Weapon_TurretTop","Weapon_TurretTop");
 StartShipWeaponConfig(NewShipType,"hgn_kineticburstcannon","Weapon_TurretTop2","Weapon_TurretTop2");
-StartShipWeaponConfig(NewShipType,"hgn_kineticburstcannonleft","Weapon_TurretTop3","Weapon_TurretTop3");
-StartShipWeaponConfig(NewShipType,"hgn_kineticburstcannonright","Weapon_TurretTop4","Weapon_TurretTop4");
+StartShipWeaponConfig(NewShipType,"hgn_gatlinggunleft","Weapon_TurretTop3","Weapon_TurretTop3");
+StartShipWeaponConfig(NewShipType,"hgn_gatlinggunright","Weapon_TurretTop4","Weapon_TurretTop4");
 
 addShield(NewShipType,"EMP",10000,20);
 
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Innate","Damageable","Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Innate","Damageable","Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_BattleCruiserEngine","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
-StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
+StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Aux_Fusion","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
+StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Hgn_C_Module_Aux_Fusion","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
 
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.19,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);

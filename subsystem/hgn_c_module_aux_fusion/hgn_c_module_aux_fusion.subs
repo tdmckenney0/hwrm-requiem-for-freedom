@@ -1,6 +1,6 @@
 NewSubSystemType = StartSubSystemConfig()
-NewSubSystemType.displayedName = "Power Plant"
-NewSubSystemType.sobDescription = "Nuclear Fusion Reactor\nProvides Extra Power"
+NewSubSystemType.displayedName = "Auxiliary Fusion Reactor"
+NewSubSystemType.sobDescription = "Provides Extra Power"
 NewSubSystemType.tacticalIcon = "hexagon"
 NewSubSystemType.tacticalIconMinSize = 0.0035
 NewSubSystemType.tacticalIconMinFadeSize = 0.0045
@@ -20,7 +20,7 @@ NewSubSystemType.selectionLimit = 5000
 NewSubSystemType.preciseATILimit = 5000
 NewSubSystemType.selectionPriority = 37.5
 NewSubSystemType.type = "System"
-NewSubSystemType.typeString = "FusionCell"
+NewSubSystemType.typeString = "AuxFusion"
 NewSubSystemType.collateralDamage = 100
 NewSubSystemType.inactiveTimeAfterDamage = 10
 NewSubSystemType.activateHealthPercentage = 0.1

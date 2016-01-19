@@ -1,8 +1,0 @@
-hitfx = "hit_generic"
-bulletfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_TORPEDO_HIT"
-nopenetratefx = "nopen_generic"
-deathtype = "deathBeam"
-hit_clamp = {
-  1,
-  1,
-}

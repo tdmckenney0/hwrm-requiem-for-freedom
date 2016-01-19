@@ -139,7 +139,7 @@ addAbility(NewShipType,"HyperSpaceCommand",0,2,500,1000,0,3);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Corvette, Fighter","Flyround_destroyer",
     {Fighter = "MoveToTargetAndShoot"},
     {Corvette = "MoveToTargetAndShoot"},
-    {Frigate = "MoveToTargetAndShoot"},
+    {Frigate = "dogfight_capital"},
     {Munition = "MoveToTargetAndShoot"},
     {SubSystem = "BroadSideVsSubSystem"}
 );

@@ -152,14 +152,7 @@ addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
 addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.2,"Munition, Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","flyby_destroyer",
-    {Fighter = "MoveToTargetAndShoot"},
-    {Corvette = "MoveToTargetAndShoot"},
-    {Frigate = "dogfight_capital"},
-    {Munition = "MoveToTargetAndShoot"},
-    {SubSystem = "FrontalVsSubSystem"},
-    {BigCapitalShip = "Circlestrafe"}
-);
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.2,"Munition, Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,Corvette,Fighter","flyby_destroyer");
 
 LoadModel(NewShipType, 1)
 

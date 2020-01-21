@@ -244,15 +244,15 @@ build =
 		Description =			"$7021"
 	},
     
-    { 
-		Type =					SubSystem, 
-		ThingToBuild =			"Hgn_C_Module_Aux_Fusion",
-		RequiredResearch =		"",
-		RequiredFleetSubSystems =	"Research",
-		DisplayPriority =		70,
-		DisplayedName =			"Auxiliary Fusion Reactor",
-		Description =			"Auxiliary Fusion Reactor"
-	},
+    -- { 
+	-- 	Type =					SubSystem, 
+	-- 	ThingToBuild =			"Hgn_C_Module_Aux_Fusion",
+	-- 	RequiredResearch =		"",
+	-- 	RequiredFleetSubSystems =	"Research",
+	-- 	DisplayPriority =		70,
+	-- 	DisplayedName =			"Auxiliary Fusion Reactor",
+	-- 	Description =			"Auxiliary Fusion Reactor"
+	-- },
 
 --	{ 
 --		Type =					SubSystem, 

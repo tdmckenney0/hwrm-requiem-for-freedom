@@ -175,7 +175,7 @@ addShield(NewShipType, "EMP", 10000, 20)
 
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Vgr_BattleCruiserEngine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Heavy Fusion Missile Launcher","Weapon_MissileBattery","Weapon","Innate","Damageable","Vgr_HeavyFusionMissileLauncherBC","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Fighter Production","HardpointGeneric1","System","Innate","Damageable","vgr_bc_production_fighter");
+-- StartShipHardPointConfig(NewShipType,"Fighter Production","HardpointGeneric1","System","Innate","Damageable","vgr_bc_production_fighter");
 StartShipHardPointConfig(NewShipType,"Hyperspace Inhibitor","HardpointGeneric2","System","Innate","Damageable","Vgr_C_Module_HyperspaceInhibitor");
 
 NewShipType.battleScarMaxTriBase = 175

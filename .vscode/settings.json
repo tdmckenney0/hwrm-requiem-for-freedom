@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.associations": {
+        "*.ship" : "lua",
+        "*.miss" : "lua",
+        "*.wf" : "lua",
+        "*.level" : "lua",
+        "*.events" : "lua",
+        "*.wepn" : "lua",
+        "*.subs" : "lua"
+    },
+      
+    "editor.tabSize": 4
+}

@@ -5,6 +5,7 @@
         "*.miss" : "lua",
         "*.wf" : "lua",
         "*.level" : "lua",
+        "*.levels" : "lua",
         "*.events" : "lua",
         "*.wepn" : "lua",
         "*.subs" : "lua"

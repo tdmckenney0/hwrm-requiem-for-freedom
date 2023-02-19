@@ -69,7 +69,7 @@ PersistantData = {
          number = 5,
 	},
 	{
-         type = "vgr_leviathan",
+         type = "vgr_heavybattlecruiser",
          subsystems = {},
          shiphold = {},
          name = "",

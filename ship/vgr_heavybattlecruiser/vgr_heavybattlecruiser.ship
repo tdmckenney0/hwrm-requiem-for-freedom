@@ -1,6 +1,6 @@
 NewShipType = StartShipConfig()
-NewShipType.displayedName = "Leviathan"
-NewShipType.sobDescription = "Heavy Battlecruiser"
+NewShipType.displayedName = "$1540"
+NewShipType.sobDescription = "$1627"
 NewShipType.maxhealth = 1000000
 NewShipType.regentime = 1800
 NewShipType.minRegenTime = 1800

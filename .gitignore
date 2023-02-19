@@ -49,3 +49,8 @@ Animatics/
 
 # WinMerge Backups
 *.bak
+
+# Backup and Old Files/Dirs
+*.old
+*.backup
+*.bak

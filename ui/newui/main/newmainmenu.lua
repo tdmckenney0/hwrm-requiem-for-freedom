@@ -85,7 +85,7 @@ NewMainMenu = {
 		type = "RmWindow",
 		name = "MainMenu_Panel",
 		WindowTemplate = PANEL_WINDOWSTYLE,
-		TitleText = "THE PRICE OF FREEDOM", -- "GAME MENU", "$5577",
+		TitleText = "REQUIEM FOR FREEDOM", -- "GAME MENU", "$5577",
 
 		Layout = {					
 				pos_XY = { x=0.7, y = 0.5,  xr="par", yr = "par" },	

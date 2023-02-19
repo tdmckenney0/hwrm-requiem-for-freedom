@@ -3,7 +3,7 @@
 --Package_Sym - Shared name for packages with the same catagory
 --Package_Desc - Description - may move to a 'package' desc file...
 
-Root = "DATA:\\LevelData\\Multiplayer\\the_price_of_freedom"
+Root = "DATA:\\LevelData\\Multiplayer\\requiem_for_freedom"
 
 ExtFilter = "levels_dm,levels_hw2,levels_dm_hw2,levels_other"
 

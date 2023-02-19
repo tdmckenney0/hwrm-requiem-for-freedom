@@ -1,6 +1,6 @@
-Homeworld: The Price of Freedom
+Homeworld: Requiem for Freedom
 --------------------------------------
 
-http://www.moddb.com/mods/the-price-of-freedom
+This is basically "Slipstream: The Price of Freedom" done correctly. 
 
-Author: Tanner Mckenney (TheMadScienceGuy)
+Author: Tanner Mckenney (SpaceCowboy)

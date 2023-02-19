@@ -47,10 +47,9 @@ Animatics/
 *.big
 *.exe
 
-# WinMerge Backups
-*.bak
-
 # Backup and Old Files/Dirs
 *.old
 *.backup
 *.bak
+*.tmp
+*.temp

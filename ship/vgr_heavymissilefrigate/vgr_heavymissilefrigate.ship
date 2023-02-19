@@ -131,7 +131,7 @@ NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",0,1,500,1000,0,3);
+addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
 addAbility(NewShipType,"MinelayerAbility",1,3.5)
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Corvette, Fighter","dogfight_capital",
     {Munition="MoveToTargetAndShoot"},

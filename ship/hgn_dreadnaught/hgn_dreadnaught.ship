@@ -140,7 +140,7 @@ NewShipType.dockQueueSelectionQueueMultiplier = 100000
 NewShipType.dockQueueSelectionOccupiedMultiplier = 100000
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"HyperSpaceCommand",0,2,500,1000,0,3);
+addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
 addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.2,"Munition, BigCapitalShip, SmallCapitalShip, Capturer, Frigate, SubSystem, Mothership, Corvette, Fighter, Utility","Frontal",
     {Fighter = "MoveToTargetAndShoot"},
     {Corvette = "MoveToTargetAndShoot"},

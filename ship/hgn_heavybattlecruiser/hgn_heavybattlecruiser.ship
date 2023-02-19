@@ -164,8 +164,8 @@ LoadSharedModel(NewShipType, "hgn_battlecruiser");
 
 AddShipAbility(NewShipType,"DefenseField",1,"ThisShipOnly",0);
 
-StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Innate","Damageable","hgn_battlecruiserplasmabombturret", "Hgn_BattleCruiserIonBeamTurret","","","","","","","",""); 
-StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Innate","Damageable","hgn_battlecruiserplasmabombturret", "Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Innate","Damageable","hgn_heavybattlecruiserionbeamturret", "", "","","","","","","","",""); 
+StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Innate","Damageable","hgn_heavybattlecruiserionbeamturret","", "","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop4","Hardpoint_TurretTop4","Weapon","Innate","Ship","hgn_battlecruisergatlinggunrightside", "Hgn_BattleCruiserKineticBurstCannonRightSide","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop3","Hardpoint_TurretTop3","Weapon","Innate","Ship","hgn_battlecruisergatlinggunleftside", "Hgn_BattleCruiserKineticBurstCannonLeftSide","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop2","Hardpoint_TurretTop2","Weapon","Innate","Ship","hgn_battlecruisergatlinggun", "Hgn_BattleCruiserKineticBurstCannon","","","","","","","","");

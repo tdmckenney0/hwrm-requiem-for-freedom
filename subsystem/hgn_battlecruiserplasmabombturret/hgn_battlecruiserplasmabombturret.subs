@@ -1,6 +1,6 @@
 
 NewSubSystemType = StartSubSystemConfig()
-NewSubSystemType.displayedName="$2026"
+NewSubSystemType.displayedName="Plasma Bomb Turret"
 NewSubSystemType.sobDescription="$2027"
 NewSubSystemType.tacticalIcon="hexagon"
 NewSubSystemType.tacticalIconMinSize=0.0035

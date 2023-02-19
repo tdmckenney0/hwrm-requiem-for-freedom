@@ -44,7 +44,7 @@ PersistantData = {
          number = 1,
 	},
 	{
-         type = "hgn_Amaranth",
+         type = "hgn_heavybattlecruiser",
          subsystems = {},
          shiphold = {},
          name = "",

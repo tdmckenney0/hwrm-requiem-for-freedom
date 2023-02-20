@@ -6,4 +6,5 @@ NewSubSystemType.hasIcon=0
 LoadHODFile(NewSubSystemType,1); 
 NewSubSystemType.AttackFamily="SmallCapitalShip"
 NewSubSystemType.ArmourFamily="HeavyArmour"
-StartSubSystemWeaponConfig(NewSubSystemType,"hgn_kineticburstcannon","Weapon_TurretTop","Weapon_TurretTop"); -- Hgn_KineticBurstCannonDestroyer
+LoadSharedModel(NewSubSystemType,"Hgn_KineticBurstCannonDestroyer");
+StartSubSystemWeaponConfig(NewSubSystemType,"Hgn_PlasmaBurstCannon","Weapon_TurretTop","Weapon_TurretTop"); -- Hgn_KineticBurstCannonDestroyer

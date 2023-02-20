@@ -151,10 +151,10 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"hgn_nuclearmissile","Weapon_Torpedo","Weapon_Torpedo"); -- Hgn_DestroyerTorpedoLauncher
-StartShipHardPointConfig(NewShipType,"Weapon_TurretTop","Hardpoint_TurretTop","Weapon","Innate","Ship","Hgn_KineticBurstCannonDestroyer","","","","","","","",""); -- Hgn_KineticBurstCannonDestroyer
-StartShipHardPointConfig(NewShipType,"Weapon_TurretFront","Hardpoint_TurretFront","Weapon","Innate","Ship","Hgn_KineticBurstCannonDestroyer","","","","","","","",""); -- Hgn_KineticBurstCannonDestroyer
-StartShipHardPointConfig(NewShipType,"Weapon_TurretBack","Hardpoint_TurretBack","Weapon","Innate","Ship","Hgn_KineticBurstCannonDestroyer","","","","","","","",""); -- Hgn_KineticBurstCannonDestroyer
-StartShipHardPointConfig(NewShipType,"Weapon_TurretBottom","Hardpoint_TurretBottom","Weapon","Innate","Ship","Hgn_KineticBurstCannonDestroyer","","","","","","","",""); -- Hgn_KineticBurstCannonDestroyer
+StartShipHardPointConfig(NewShipType,"Weapon_TurretTop","Hardpoint_TurretTop","Weapon","Innate","Ship","hgn_plasmaburstcannondestroyer","","","","","","","",""); -- Hgn_KineticBurstCannonDestroyer
+StartShipHardPointConfig(NewShipType,"Weapon_TurretFront","Hardpoint_TurretFront","Weapon","Innate","Ship","hgn_plasmaburstcannondestroyer","","","","","","","",""); -- Hgn_KineticBurstCannonDestroyer
+StartShipHardPointConfig(NewShipType,"Weapon_TurretBack","Hardpoint_TurretBack","Weapon","Innate","Ship","hgn_plasmaburstcannondestroyer","","","","","","","",""); -- Hgn_KineticBurstCannonDestroyer
+StartShipHardPointConfig(NewShipType,"Weapon_TurretBottom","Hardpoint_TurretBottom","Weapon","Innate","Ship","hgn_plasmaburstcannondestroyer","","","","","","","",""); -- Hgn_KineticBurstCannonDestroyer
 addShield(NewShipType,"EMP",1000,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_Des_Engine","","","","","","","","");
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.45,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);

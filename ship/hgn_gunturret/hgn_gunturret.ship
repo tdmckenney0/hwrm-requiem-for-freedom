@@ -121,9 +121,8 @@ addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Mi
 NewShipType.disableOnRaceChange = 0
 LoadModel(NewShipType, 1)
 
-StartShipWeaponConfig(NewShipType, "hgn_gatlinggunsmall", "Weapon_Top", "")
-StartShipWeaponConfig(NewShipType, "hgn_gatlinggunsmall", "Weapon_Bottom", "")
-
+StartShipHardPointConfig(NewShipType,"Weapon_Top","Hardpoint_Top","Weapon","Innate","Ship","hgn_frigategatlinggun","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon_Bottom","Hardpoint_Bottom","Weapon","Innate","Ship","hgn_frigategatlinggun","","","","","","","","");
 
 addShield(NewShipType,"EMP",40,20);
 NewShipType.battleScarCoverage = 2

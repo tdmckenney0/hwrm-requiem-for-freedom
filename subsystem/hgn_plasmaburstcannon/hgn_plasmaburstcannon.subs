@@ -1,0 +1,10 @@
+
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.selectionLimit=1
+NewSubSystemType.type="Weapon"
+NewSubSystemType.hasIcon=0
+LoadHODFile(NewSubSystemType,1); 
+NewSubSystemType.AttackFamily="Frigate"
+NewSubSystemType.ArmourFamily="MediumArmour"
+LoadSharedModel(NewSubSystemType,"Hgn_KineticBurstCannon");
+StartSubSystemWeaponConfig(NewSubSystemType,"hgn_plasmaburstcannon","Weapon_Top","Weapon_Top"); -- Hgn_KineticBurstCannon

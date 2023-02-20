@@ -13,7 +13,6 @@ NewShipType.minRegenTime=0
 NewShipType.sideArmourDamage=1
 NewShipType.rearArmourDamage=1
 NewShipType.isTransferable=1
-NewShipType.useEngagementRanges=0
 NewShipType.unitCapsNumber=1
 NewShipType.SquadronSize=1
 NewShipType.formationSpacing=45
@@ -122,7 +121,7 @@ NewShipType.launchTimeBeforeStart=2
 NewShipType.launchNrOfShipsInDockFormation=1
 NewShipType.launchFormation="delta"
 addAbility(NewShipType,"ParadeCommand",1);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Munition, Fighter, Corvette, Capturer, Frigate, Utility, SmallCapitalShip, BigCapitalShip","justshootVgrPlatform");
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1,"Munition, Fighter, Corvette, Capturer, Frigate, Utility, SmallCapitalShip, BigCapitalShip","justshootVgrPlatform");
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);

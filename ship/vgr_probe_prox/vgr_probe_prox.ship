@@ -12,7 +12,6 @@ NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
 NewShipType.rearArmourDamage = 1
 NewShipType.isTransferable = 1
-NewShipType.useEngagementRanges = 0
 NewShipType.unitCapsNumber = 0
 NewShipType.SquadronSize = 1
 NewShipType.passiveFormation = "dockline"

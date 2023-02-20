@@ -7,7 +7,6 @@ NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
 NewShipType.rearArmourDamage = 1
 NewShipType.isTransferable = 1
-NewShipType.useEngagementRanges = 0
 NewShipType.unitCapsNumber = 3
 NewShipType.SquadronSize = 5
 NewShipType.formationSpacing = 30
@@ -130,7 +129,7 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "n_delta"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
-addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership","FlyBy_Interceptor_vs_Frigate",
+addAbility(NewShipType,"CanAttack",1,1,1,1,0.35,1,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership","FlyBy_Interceptor_vs_Frigate",
     {Fighter = "Flyby_Interceptor_vs_Fighter"},
     {SubSystem = "TopAttack_Interceptor_vs_Subsystem"},
     {SmallCapitalShip = "Flyby_Interceptor_vs_CapShip"},

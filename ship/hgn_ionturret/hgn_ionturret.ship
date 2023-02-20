@@ -7,7 +7,6 @@ NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
 NewShipType.rearArmourDamage = 1
 NewShipType.isTransferable = 1
-NewShipType.useEngagementRanges = 0
 NewShipType.unitCapsNumber = 1
 NewShipType.SquadronSize = 1
 NewShipType.formationSpacing = 45
@@ -123,9 +122,9 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "n_delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType, "GuardCommand", 1, 5000, 500);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Munition, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Corvette, Fighter","JustShoot");
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1,"Munition, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Mothership, Utility, Corvette, Fighter","JustShoot");
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 NewShipType.disableOnRaceChange = 0
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Hgn_IonCannonTurret","Weapon_Top","Weapon_Top");

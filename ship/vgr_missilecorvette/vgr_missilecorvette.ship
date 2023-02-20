@@ -7,7 +7,6 @@ NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
 NewShipType.rearArmourDamage = 1
 NewShipType.isTransferable = 1
-NewShipType.useEngagementRanges = 0
 NewShipType.unitCapsNumber = 2
 NewShipType.SquadronSize = 4
 NewShipType.formationSpacing = 40
@@ -128,7 +127,7 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "dockline"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,2,1,0,0.35,1,"Munition, Corvette, Fighter, Frigate, SmallCapitalShip, BigCapitalShip, Utility","FlyBy_Corvette_vs_Corvette",
+addAbility(NewShipType,"CanAttack",1,1,1,1,0.35,1,"Munition, Corvette, Fighter, Frigate, SmallCapitalShip, BigCapitalShip, Utility","FlyBy_Corvette_vs_Corvette",
     {Fighter = "FlyRound_Corvette_vs_Fighter"},
     {Mothership = "flyround_Corvette_vs_Mothership"},
     {SmallCapitalShip = "FlyRound_Corvette_vs_CapShip"},

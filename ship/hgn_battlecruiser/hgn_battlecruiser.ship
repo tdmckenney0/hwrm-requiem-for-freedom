@@ -149,7 +149,7 @@ addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Munition, Capturer,Frigate,
 {Corvette = "flyby_destroyer"}, -- MoveToTargetAndShoot
 {Corvette_hw1 = "flyby_destroyer"}, -- MoveToTargetAndShoot
 {Frigate = "flyby_destroyer"}, -- Frontal
-{Munition = "flyby_destroyer"}, -- MoveToTargetAndShoot
+{Munition = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
 {SubSystem = "flyby_destroyer"}); -- FrontalVsSubSystem
 NewShipType.noCombatGrouping = 1
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
@@ -160,7 +160,7 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Innate","Damageable","hgn_battlecruiserplasmabombturret", "Hgn_BattleCruiserIonBeamTurret","","","","","","","",""); 
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Innate","Damageable","hgn_battlecruiserplasmabombturret", "Hgn_BattleCruiserIonBeamTurret","","","","","","","","");

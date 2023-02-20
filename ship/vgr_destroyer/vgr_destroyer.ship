@@ -142,7 +142,7 @@ addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Munition, Capturer, Frigate
 {Fighter_hw1 = "Flyround_destroyer"}, -- MoveToTargetAndShoot
 {Corvette = "Flyround_destroyer"}, -- movetotargetandshoot_VgrDestroyer_vs_Corvettes
 {Corvette_hw1 = "Flyround_destroyer"}, -- movetotargetandshoot_VgrDestroyer_vs_Corvettes
-{Munition = "Flyround_destroyer"}, -- MoveToTargetAndShoot
+{Munition = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
 {SubSystem = "Flyround_destroyer"}); -- BroadSideVsSubSystem
 NewShipType.noCombatGrouping = 1
 addAbility(NewShipType,"GuardCommand",1,3000,800);

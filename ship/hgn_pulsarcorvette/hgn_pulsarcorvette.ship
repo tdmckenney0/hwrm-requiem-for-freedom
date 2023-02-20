@@ -7,7 +7,6 @@ NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
 NewShipType.rearArmourDamage = 1
 NewShipType.isTransferable = 1
-NewShipType.useEngagementRanges = 0
 NewShipType.unitCapsNumber = 2
 NewShipType.SquadronSize = 3
 NewShipType.formationSpacing = 50
@@ -125,7 +124,7 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "dockline"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,3,1,0,0.35,1,"Munition, Corvette, Frigate, Fighter, SmallCapitalShip, BigCapitalShip, Utility","FlyRound_PulsarCorvette_vs_Frigate",
+addAbility(NewShipType,"CanAttack",1,1,1,1,0.35,1,"Munition, Corvette, Frigate, Fighter, SmallCapitalShip, BigCapitalShip, Utility","FlyRound_PulsarCorvette_vs_Frigate",
     {Fighter = "FlyRound_PulsarCorvette_vs_Fighter"},
     {Mothership = "flyround_PulsarCorvette_vs_Mothership"},
     {SmallCapitalShip = "FlyRound_PulsarCorvette_vs_CapShip"},
@@ -138,7 +137,7 @@ addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
 addAbility(NewShipType,"RetireAbility",1,0);
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType, "hgn_pulsarnormalonly", "Weapon_Pulsar", "Fire")
 addShield(NewShipType,"EMP",75,20);

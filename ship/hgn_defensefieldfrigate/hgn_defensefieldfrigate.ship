@@ -13,7 +13,6 @@ NewShipType.minRegenTime=1200
 NewShipType.sideArmourDamage=1.2
 NewShipType.rearArmourDamage=1.2
 NewShipType.isTransferable=1
-NewShipType.useEngagementRanges=1
 NewShipType.unitCapsNumber=2
 NewShipType.SquadronSize=1
 NewShipType.passiveFormation="Spear"

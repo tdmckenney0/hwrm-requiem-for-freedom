@@ -7,7 +7,6 @@ NewShipType.minRegenTime = 0
 NewShipType.sideArmourDamage = 1
 NewShipType.rearArmourDamage = 1
 NewShipType.isTransferable = 1
-NewShipType.useEngagementRanges = 0
 NewShipType.unitCapsNumber = 2
 NewShipType.SquadronSize = 3
 NewShipType.formationSpacing = 60
@@ -125,16 +124,16 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "dockline"
 addAbility(NewShipType, "ParadeCommand", 1)
 addAbility(NewShipType, "WaypointMove")
-addAbility(NewShipType,"CanAttack",1,3,1,0,0.35,1,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip","FlyRound_Corvette_vs_Frigate",
+addAbility(NewShipType,"CanAttack",1,1,1,1,0.35,1,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip","FlyRound_Corvette_vs_Frigate",
     {Fighter = "FlyRound_Corvette_vs_Fighter"},
-    {Munition = "JustShoot"},
+    {Munition = "MoveToTargetAndShoot"},
     {Mothership = "flyround_Corvette_vs_Mothership"},
     {SmallCapitalShip = "FlyRound_Corvette_vs_CapShip"},
     {BigCapitalShip = "FlyRound_Corvette_vs_CapShip"},
     {SubSystem = "FrontalVsSubSystem_Corvette"},
     {Corvette = "FlyBy_Corvette_vs_Corvette"}
 );
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);

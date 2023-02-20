@@ -144,8 +144,8 @@ addAbility(NewShipType,"ShipHold",1,40,100,"rallypoint","Fighter, Corvette,Utili
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Munition, Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate,  SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1,"Munition, Fighter, Fighter_hw1, Corvette, Corvette_hw1, Frigate,  SmallCapitalShip, BigCapitalShip, Utility","JustShoot");
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
 addAbility(NewShipType,"CanBuildShips",1,"Fighter_Hgn, Corvette_Hgn, Frigate_Hgn, Utility_Hgn, Platform_Hgn, SubSystem_Hgn, Probe_Hgn","Utility, Fighter, Corvette, Frigate, Platform, SubSystemModule, SubSystemSensors");
 addAbility(NewShipType,"CanBeCaptured",160,0.5,"CapCap");

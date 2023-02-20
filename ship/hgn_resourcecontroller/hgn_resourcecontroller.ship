@@ -7,7 +7,6 @@ NewShipType.minRegenTime = 850
 NewShipType.sideArmourDamage = 1
 NewShipType.rearArmourDamage = 1
 NewShipType.isTransferable = 1
-NewShipType.useEngagementRanges = 0
 NewShipType.unitCapsNumber = 3
 NewShipType.paradeData = "dummy_parade"
 NewShipType.SquadronSize = 1
@@ -134,8 +133,8 @@ addAbility(NewShipType,"ShipHold",1,40,0,"rallypoint","",35);
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership","JustShoot");
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip, Mothership","JustShoot");
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 addAbility(NewShipType,"GuardCommand",1,3000,800);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType,"CanBeCaptured",30,0.1,"CapCap");

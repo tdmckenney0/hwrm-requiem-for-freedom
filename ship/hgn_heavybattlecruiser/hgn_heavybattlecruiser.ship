@@ -149,12 +149,12 @@ addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Munition,Capturer,Frigate,S
 {Corvette = "flyby_destroyer"}, -- MoveToTargetAndShoot
 {Corvette_hw1 = "flyby_destroyer"}, -- MoveToTargetAndShoot
 {Frigate = "flyby_destroyer"}, -- Frontal
-{Munition = "flyby_destroyer"}, -- MoveToTargetAndShoot
+{Munition = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
 {SubSystem = "flyby_destroyer"}); -- FrontalVsSubSystem
 NewShipType.noCombatGrouping = 1
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
 addAbility(NewShipType,"CanBuildShips",1,"Fighter_Hgn, SubSystem_Hgn, SuperCap_Hgn, Battlecruiser_Hgn","Fighter, Capital, SubSystemModule");
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 addAbility(NewShipType,"CanBeCaptured",160,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");

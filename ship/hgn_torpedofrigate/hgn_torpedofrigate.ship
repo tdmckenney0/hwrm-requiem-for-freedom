@@ -7,7 +7,6 @@ NewShipType.minRegenTime = 1200
 NewShipType.sideArmourDamage = 1.2
 NewShipType.rearArmourDamage = 1.2
 NewShipType.isTransferable = 1
-NewShipType.useEngagementRanges = 1
 NewShipType.unitCapsNumber = 2
 NewShipType.SquadronSize = 1
 NewShipType.formationSpacing = 250
@@ -135,7 +134,7 @@ NewShipType.launchFormation = "delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
-addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Munition, Corvette, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Fighter","dogfight_capital",
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Munition, Corvette, Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Fighter","dogfight_capital",
     {Munition = "MoveToTargetAndShoot"},
     {SubSystem = "FrontalVsSubSystem"}
 );
@@ -145,7 +144,7 @@ addAbility(NewShipType,"CanBeCaptured",30,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"hgn_nuclearmissile","weapon_Torpedo","");
 addShield(NewShipType,"EMP",310,20);

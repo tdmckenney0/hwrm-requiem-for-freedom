@@ -64,6 +64,27 @@ PersistantData = {
          name = "",
          number = 5,
 	},
+    {
+        type = "hgn_torpedofrigate",
+        subsystems = {},
+        shiphold = {},
+        name = "",
+        number = 5,
+    },
+    {
+        type = "hgn_defensefieldfrigate",
+        subsystems = {},
+        shiphold = {},
+        name = "",
+        number = 1,
+    },
+    {
+        type = "hgn_marinefrigate",
+        subsystems = {},
+        shiphold = {},
+        name = "",
+        number = 1,
+    },
 	{
          type = "hgn_interceptor",
          subsystems = {},

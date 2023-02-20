@@ -54,6 +54,20 @@ PersistantData = {
          name = "",
          number = 5,
 	},
+  {
+          type = "vgr_heavymissilefrigate",
+          subsystems = {},
+          shiphold = {},
+          name = "",
+          number = 5,
+  },
+  {
+          type = "vgr_infiltratorfrigate",
+          subsystems = {},
+          shiphold = {},
+          name = "",
+          number = 2,
+  },
 	{
          type = "vgr_interceptor",
          subsystems = {},

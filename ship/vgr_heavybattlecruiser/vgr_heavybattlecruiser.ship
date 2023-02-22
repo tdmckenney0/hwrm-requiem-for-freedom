@@ -14,7 +14,7 @@ setTacticsMults(NewShipType, "FIRERATE", 0.98, 1.02, 1.0)
 NewShipType.isTransferable = 0
 NewShipType.defaultROE = "Defensive"
 NewShipType.defaultStance = "Neutral"
-NewShipType.paradeData = "vgr_carrier_parade"
+NewShipType.paradeData = "vgr_mothership_parade"
 NewShipType.mass = 1250 -- 1000
 NewShipType.collisionMultiplier = 1
 NewShipType.thrusterMaxSpeed = 140 -- 79

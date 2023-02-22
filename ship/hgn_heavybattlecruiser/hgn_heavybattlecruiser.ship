@@ -143,14 +143,14 @@ addAbility(NewShipType,"ShipHold",1,0,50,"rallypoint","Fighter, Corvette",25,{Fi
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
-addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Munition,Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,,,,,Corvette, Corvette_hw1,Fighter, Fighter_hw1","flyby_destroyer",
-{Fighter = "flyby_destroyer"}, -- MoveToTargetAndShoot
-{Fighter_hw1 = "flyby_destroyer"}, -- MoveToTargetAndShoot
-{Corvette = "flyby_destroyer"}, -- MoveToTargetAndShoot
-{Corvette_hw1 = "flyby_destroyer"}, -- MoveToTargetAndShoot
-{Frigate = "flyby_destroyer"}, -- Frontal
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Munition,Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,,,,,Corvette, Corvette_hw1,Fighter, Fighter_hw1","flyround_destroyer",
+{Fighter = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
+{Fighter_hw1 = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
+{Corvette = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
+{Corvette_hw1 = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
+{Frigate = "MoveToTargetAndShoot"}, -- Frontal
 {Munition = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
-{SubSystem = "flyby_destroyer"}); -- FrontalVsSubSystem
+{SubSystem = "MoveToTargetAndShoot"}); -- FrontalVsSubSystem
 NewShipType.noCombatGrouping = 1
 addAbility(NewShipType,"GuardCommand",1,3000,1000);
 addAbility(NewShipType,"CanBuildShips",1,"Fighter_Hgn, SubSystem_Hgn, SuperCap_Hgn, Battlecruiser_Hgn","Fighter, Capital, SubSystemModule");

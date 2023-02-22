@@ -130,14 +130,14 @@ NewShipType.launchFormation = "delta"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
-addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip","flyby_destroyer",
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.5,"Munition, Fighter, Corvette, Frigate, Utility, SmallCapitalShip, BigCapitalShip","MoveToTargetAndShoot",
 {Fighter = "MoveToTargetAndShoot_Frigate"},
 {Fighter_hw1 = "MoveToTargetAndShoot_Frigate"},
 {Corvette = "MoveToTargetAndShoot_Frigate"},
 {Corvette_hw1 = "MoveToTargetAndShoot_Frigate"},
 {Munition = "MoveToTargetAndShoot_Frigate"},
-{SmallCapitalShip = "flyby_destroyer"}, -- frontal_frigate
-{BigCapitalShip = "flyby_destroyer"}, -- frontal_frigate
+{SmallCapitalShip = "flyby_bomber_vs_resourcelarge"}, -- frontal_frigate
+{BigCapitalShip = "flyby_bomber_vs_resourcelarge"}, -- frontal_frigate
 {SubSystem = "FrontalVsSubSystem"});
 addAbility(NewShipType,"GuardCommand",1,3000,600);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);

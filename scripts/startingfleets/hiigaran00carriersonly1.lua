@@ -45,30 +45,6 @@ PersistantData = {
          },
          shiphold = {},
          name = "",
-         number = 1,
-	},
-	{
-         type = "hgn_heavybattlecruiser",
-         subsystems = {
-            {
-                index = 0,
-                name = "HGN_C_MODULE_HYPERSPACE",
-            }
-         },
-         shiphold = {},
-         name = "",
-         number = 1,
-	},
-	{
-         type = "Hgn_battlecruiser",
-         subsystems = {
-            {
-                index = 0,
-                name = "HGN_C_MODULE_HYPERSPACE",
-            }
-         },
-         shiphold = {},
-         name = "",
          number = 2,
 	},
 	{
@@ -99,7 +75,7 @@ PersistantData = {
         name = "",
         number = 1,
     },
-	{
+    {
         type = "hgn_attackbomber",
         subsystems = {},
         shiphold = {},
@@ -120,13 +96,6 @@ PersistantData = {
          name = "",
          number = 5,
 	},
-    {
-        type = "hgn_destroyer",
-        subsystems = {},
-        shiphold = {},
-        name = "",
-        number = 3,
-   },
 		},
    Research = {
 	[1] = {

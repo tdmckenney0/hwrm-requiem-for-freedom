@@ -173,10 +173,10 @@ StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD2","Fire_Mis
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD3","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD4","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD5","Fire_Missile");
-StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser1",""); -- Vgr_BCLaser
-StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser2",""); -- Vgr_BCLaser
-StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser3",""); -- Vgr_BCLaser
-StartShipWeaponConfig(NewShipType,"vgr_iondefense","Weapon_BCHeavyLaser4",""); -- Vgr_BCLaser
+StartShipWeaponConfig(NewShipType,"Vgr_HBCLaser","Weapon_BCHeavyLaser1",""); -- Vgr_BCLaser
+StartShipWeaponConfig(NewShipType,"Vgr_HBCLaser","Weapon_BCHeavyLaser2",""); -- Vgr_BCLaser
+StartShipWeaponConfig(NewShipType,"Vgr_HBCLaser","Weapon_BCHeavyLaser3",""); -- Vgr_BCLaser
+StartShipWeaponConfig(NewShipType,"Vgr_HBCLaser","Weapon_BCHeavyLaser4",""); -- Vgr_BCLaser
 
 addShield(NewShipType,"EMP",10000,20);
 

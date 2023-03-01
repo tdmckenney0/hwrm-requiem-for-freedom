@@ -126,8 +126,8 @@ addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
 addAbility(NewShipType, "GuardCommand", 1, 5000, 500)
 addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadSharedModel(NewShipType, "vgr_weaponplatform_gun");
-StartShipHardPointConfig(NewShipType,"Weapon_Gun_R","Hardpoint_Gun_R","Weapon","Innate","Ship","vgr_vulcanplasmaturret","","","","","","","",""); -- Vgr_VulcanKineticTurretLongRange
-StartShipHardPointConfig(NewShipType,"Weapon_Gun_L","Hardpoint_Gun_L","Weapon","Innate","Ship","vgr_vulcanplasmaturret","","","","","","","",""); -- Vgr_VulcanKineticTurretLongRange
+StartShipHardPointConfig(NewShipType,"Weapon_Gun_R","Hardpoint_Gun_R","Weapon","Innate","Ship","vgr_vulcanpulseturret","","","","","","","",""); -- Vgr_VulcanKineticTurretLongRange
+StartShipHardPointConfig(NewShipType,"Weapon_Gun_L","Hardpoint_Gun_L","Weapon","Innate","Ship","vgr_vulcanpulseturret","","","","","","","",""); -- Vgr_VulcanKineticTurretLongRange
 --StartShipWeaponConfig(NewShipType,"Vgr_VulcanKineticTurretLongRange","Weapon_Gun_R","Weapon_Gun_R");
 --StartShipWeaponConfig(NewShipType,"Vgr_VulcanKineticTurretLongRange","Weapon_Gun_L","Weapon_Gun_L");
 addShield(NewShipType,"EMP",40,20);

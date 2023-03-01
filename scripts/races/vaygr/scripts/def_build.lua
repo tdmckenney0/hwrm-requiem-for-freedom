@@ -478,6 +478,16 @@ build =
 		Description =			"$7163" 
 	},
 
+	{ 
+		Type = 					Ship, 
+		ThingToBuild = 			"Vgr_WeaponPlatform_plasma",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"PlatformProduction",
+		DisplayPriority =		420,
+		DisplayedName =			"$11512",
+		Description =			"$1515" 
+	},
+
 	-- Utility ----------------
 
 	{ 

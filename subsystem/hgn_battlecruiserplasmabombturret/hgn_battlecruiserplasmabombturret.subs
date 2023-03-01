@@ -35,4 +35,4 @@ NewSubSystemType.DockFamily="CantDock"
 NewSubSystemType.DisplayFamily="SubSystemModule"
 NewSubSystemType.ArmourFamily="SubSystemArmour"
 LoadSharedModel(NewSubSystemType,"Hgn_BattleCruiserKineticBurstCannon");
-StartSubSystemWeaponConfig(NewSubSystemType,"hgn_plasmabatteryx6","Weapon_TurretTop","Weapon_TurretTop");
+StartSubSystemWeaponConfig(NewSubSystemType,"hgn_battlecruiserplasmabombturret","Weapon_TurretTop","Weapon_TurretTop"); -- Hgn_BattleCruiserKineticBurstCannon

@@ -162,8 +162,8 @@ addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
 addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
-StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Innate","Damageable","hgn_battlecruiserplasmabombturret", "Hgn_BattleCruiserIonBeamTurret","","","","","","","",""); 
-StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Innate","Damageable","hgn_battlecruiserplasmabombturret", "Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Generic","Destroyable","hgn_battlecruiserplasmabombturret", "Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Generic","Destroyable","hgn_battlecruiserplasmabombturret", "Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop4","Hardpoint_TurretTop4","Weapon","Innate","Ship","hgn_battlecruisergatlinggunrightside", "Hgn_BattleCruiserKineticBurstCannonRightSide","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop3","Hardpoint_TurretTop3","Weapon","Innate","Ship","hgn_battlecruisergatlinggunleftside", "Hgn_BattleCruiserKineticBurstCannonLeftSide","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop2","Hardpoint_TurretTop2","Weapon","Innate","Ship","hgn_battlecruisergatlinggun", "Hgn_BattleCruiserKineticBurstCannon","","","","","","","","");

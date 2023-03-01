@@ -182,9 +182,8 @@ StartShipWeaponConfig(NewShipType,"hgn_amaranth_kprbeamside","Weapon_pulsar4","W
 addShield(NewShipType,"EMP",10000,20);
 
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_BattleCruiserEngine","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
-StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
--- StartShipHardPointConfig(NewShipType,"Fighter Production","HardpointGeneric2","System","Innate","Damageable","hgn_bc_production_fighter");
+StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","hgn_hbc_production_fighter","","","");
+StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","hgn_hbc_production_fighter","","","");
 
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.19,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);

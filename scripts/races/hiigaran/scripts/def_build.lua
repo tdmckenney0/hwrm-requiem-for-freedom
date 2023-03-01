@@ -613,8 +613,17 @@ build =
 		DisplayedName =			"$7074",
 		Description =			"$7075"
 	},
+-- Requiem For Freedom Subsystems
 
-
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hgn_hbc_production_fighter",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		0,
+		DisplayedName =			"$7000",
+		Description =			"$7001"
+	},
 -----------------------------------------------------------------------
 -- TEMP - All other ships here, for single player game ----------------
 	{ 

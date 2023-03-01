@@ -40,6 +40,28 @@ PersistantData = {
       name = "",
       number = 1,
     },
+    -- Platforms
+    {
+      type = "vgr_weaponplatform_gun",
+      subsystems = {},
+      shiphold = {},
+      name = "",
+      number = 4,
+    },
+    {
+        type = "vgr_weaponplatform_missile",
+        subsystems = {},
+        shiphold = {},
+        name = "",
+        number = 4,
+    },
+    {
+        type = "vgr_weaponplatform_plasma",
+        subsystems = {},
+        shiphold = {},
+        name = "",
+        number = 4,
+    },
     -- Utility
     {
       type = "Vgr_ResourceCollector",

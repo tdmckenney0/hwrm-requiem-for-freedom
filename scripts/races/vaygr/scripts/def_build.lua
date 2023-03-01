@@ -561,6 +561,15 @@ build =
 		Description =			"" 
 	},
 
-
-
+	-- Requiem For Freedom Subsystems
+	
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"vgr_hbc_production_fighter",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		0,
+		DisplayedName =			"$7100",
+		Description =			"$7101" 
+	},
 }

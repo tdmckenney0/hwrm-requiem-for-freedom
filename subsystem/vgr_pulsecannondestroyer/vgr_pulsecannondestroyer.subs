@@ -6,4 +6,4 @@ NewSubSystemType.hasIcon=0
 LoadSharedModel(NewSubSystemType,"vgr_flechettecannondestroyer"); 
 NewSubSystemType.AttackFamily="SmallCapitalShip"
 NewSubSystemType.ArmourFamily="HeavyArmour"
-StartSubSystemWeaponConfig(NewSubSystemType,"vgr_flakturret","Weapon_FlechetteTop","Weapon_FlechetteTop");
+StartSubSystemWeaponConfig(NewSubSystemType,"vgr_pulsecannondestroyer","Weapon_FlechetteTop","Weapon_FlechetteTop");

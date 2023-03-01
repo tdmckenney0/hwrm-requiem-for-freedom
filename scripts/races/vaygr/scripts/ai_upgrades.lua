@@ -34,27 +34,18 @@ rt_collector = {
 	UTILITYHEALTHUPGRADE1,
 	UTILITYHEALTHUPGRADE2,
 }
---rt_refinery = {
---	RESOURCECONTROLLERHEALTHUPGRADE1,
---	RESOURCECONTROLLERHEALTHUPGRADE2,
---}
---rt_hyperspace = {
---	cost = {
---		HYPERSPACECOSTUPGRADE1,
---		HYPERSPACECOSTUPGRADE2,
---	},
---	transittime = {
---		HYPERSPACETRANSITTIMEUPGRADE1,
---		HYPERSPACETRANSITTIMEUPGRADE2,
---	},
---	recoverytime = {
---		HYPERSPACERECOVERYTIMEUPGRADE1,
---		HYPERSPACERECOVERYTIMEUPGRADE2,
---	},
---}
 
 function DoUpgradeDemand_Vaygr()
-	if (s_militaryStrength > 10 or g_LOD == 0) then
+-- A Hack, but the swarm must have upgrades
+	ResearchDemandSet( FIGHTERSPEEDUPGRADE1, 7 )
+	ResearchDemandSet( CORVETTEHEALTHUPGRADE1, 6 )
+	ResearchDemandSet( CORVETTESPEEDUPGRADE1, 5 )
+	ResearchDemandSet( FRIGATEHEALTHUPGRADE1, 4 )
+	ResearchDemandSet( FRIGATESPEEDUPGRADE1, 3 )
+	ResearchDemandSet( SUPERCAPHEALTHUPGRADE1, 2 )	
+	ResearchDemandSet( SUPERCAPSPEEDUPGRADE1, 1 )	
+
+	if (s_militaryStrength > 10 or g_LOD == 0 or GetRU() > 2200) then
 		inc_upgrade_demand( rt_mothership, 0.5 )
 		ResearchDemandAdd( MOTHERSHIPBUILDSPEEDUPGRADE1, 0.5 )
 		local numCorvette = numActiveOfClass( s_playerIndex, eCorvette )

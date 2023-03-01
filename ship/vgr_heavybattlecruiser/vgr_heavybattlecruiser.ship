@@ -167,7 +167,7 @@ addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Mi
 
 LoadSharedModel(NewShipType, "vgr_battlecruiser");
 
-StartShipWeaponConfig(NewShipType,"vgr_superheavybeam","Weapon_BCUberPulse","Weapon_BCUberPulse"); -- Vgr_BCForwardWeapon
+StartShipWeaponConfig(NewShipType,"vgr_hbcforwardweapon","Weapon_BCUberPulse","Weapon_BCUberPulse"); -- Vgr_BCForwardWeapon
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD1","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD2","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD3","Fire_Missile");

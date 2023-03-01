@@ -2403,7 +2403,7 @@ HW1_FighterTank 		= Icon_Subsystem_Engine
 
 -- Requiem For Freedom Ships
 hgn_pulsarplatform = Hgn_IonTurret
-vgr_weaponplatform_plasma = vgr_weaponplatform_gun
+vgr_weaponplatform_plasma = Vgr_WeaponPlatform_gun
 hgn_heavybattlecruiser = Hgn_BattleCruiser
 vgr_heavybattlecruiser = Vgr_BattleCruiser
 

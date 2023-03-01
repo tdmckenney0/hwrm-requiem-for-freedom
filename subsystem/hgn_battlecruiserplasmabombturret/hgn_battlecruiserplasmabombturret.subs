@@ -29,7 +29,6 @@ NewSubSystemType.costToBuild=500
 NewSubSystemType.timeToBuild=35
 NewSubSystemType.isResearch=0
 NewSubSystemType.visible=1
-LoadHODFile(NewSubSystemType,1);
 NewSubSystemType.BuildFamily="SubSystem_Hgn"
 NewSubSystemType.AttackFamily="SubSystem"
 NewSubSystemType.DockFamily="CantDock"

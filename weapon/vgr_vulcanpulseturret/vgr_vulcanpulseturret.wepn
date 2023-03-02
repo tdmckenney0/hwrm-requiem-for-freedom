@@ -6,7 +6,7 @@
 StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Bullet", "vgr_laser", "Normal", 1500, 6000, 0, 0, 0, 0, 1, 1, 1, 0.5, 2, 3, 1, 1, 120, 120, 0.1, "Normal", 1, 0, 0)
 
 AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 450, 450, "")
-AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"hgn_PlasmaBurst")
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"vgr_pulsecannonburst")
 
 setPenetration(NewWeaponType, 30, 1,
 {

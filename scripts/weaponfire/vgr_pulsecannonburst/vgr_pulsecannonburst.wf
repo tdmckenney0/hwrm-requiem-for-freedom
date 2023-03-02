@@ -6,7 +6,7 @@
 -- the 'distance' variable sets the max distance to which this effect is visible.
 
 --bulletfx = "explosion_spray_very_small_flak"
-bulletfx = "emp_pulse_combo.lua"
+bulletfx = "vgr_pulsecannonburst"
 nopenetratefx = "nopen_generic"
 deathtype = "deathCannon"
 --nopenetratefx = "nopen_generic_ring"

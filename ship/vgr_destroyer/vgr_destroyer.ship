@@ -155,7 +155,7 @@ addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Mi
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_FlechetteBottom","Hardpoint_FlechetteBottom","Weapon","Innate","Ship","vgr_pulsecannondestroyer","","","","","","","",""); -- Vgr_FlechetteCannonDestroyer
 StartShipHardPointConfig(NewShipType,"Weapon_FlechetteTop","Hardpoint_FlechetteTop","Weapon","Innate","Ship","vgr_pulsecannondestroyer","","","","","","","",""); -- Vgr_FlechetteCannonDestroyer
-StartShipWeaponConfig(NewShipType,"vgr_volleymissile","Weapon_Missile","Fire_Missle");
+StartShipWeaponConfig(NewShipType,"Vgr_HeavyFusionMissileLauncherWeak","Weapon_Missile","Fire_Missle");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_Defence1","");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_Defence2","");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_Defence3","");

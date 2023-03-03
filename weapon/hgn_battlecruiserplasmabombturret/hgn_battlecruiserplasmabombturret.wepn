@@ -1,7 +1,7 @@
 StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Dread_Bomb","Normal",5500,6000,0,0,0,0,1,1,1,0.5,3,15,1,0,45,45,0.1,"Normal",0,0,0)
 
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",250,500,"")
-AddWeaponResult(NewWeaponType,"Hit","Push","Target",25,30,"")
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",2500,2500,"");
+AddWeaponResult(NewWeaponType,"Hit","Push","Target",150,150,"")
 
 setAngles(NewWeaponType,10,-160,160,0,60)
 

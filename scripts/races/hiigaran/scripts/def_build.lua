@@ -642,6 +642,15 @@ build =
 		DisplayedName =			"$2026",
 		Description =			"$2027"
 	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hgn_battlecruiserminelauncher",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		120,
+		DisplayedName =			"$11520",
+		Description =			"$11520"
+	},
 -----------------------------------------------------------------------
 -- TEMP - All other ships here, for single player game ----------------
 	{ 

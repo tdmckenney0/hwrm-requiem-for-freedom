@@ -29,10 +29,10 @@ NewSubSystemType.costToBuild=500
 NewSubSystemType.timeToBuild=35
 NewSubSystemType.isResearch=0
 NewSubSystemType.visible=1
+LoadSharedModel(NewSubSystemType,"hgn_battlecruiserionbeamturret");
 NewSubSystemType.BuildFamily="SubSystem_Hgn"
 NewSubSystemType.AttackFamily="SubSystem"
 NewSubSystemType.DockFamily="CantDock"
 NewSubSystemType.DisplayFamily="SubSystemModule"
 NewSubSystemType.ArmourFamily="SubSystemArmour"
-LoadSharedModel(NewSubSystemType,"Hgn_BattleCruiserKineticBurstCannon");
-StartSubSystemWeaponConfig(NewSubSystemType,"hgn_battlecruiserplasmabombturret","Weapon_TurretTop","Weapon_TurretTop"); -- Hgn_BattleCruiserKineticBurstCannon
+StartSubSystemWeaponConfig(NewSubSystemType,"hgn_battlecruiserplasmabombturret","Weapon_IonCan1","Weapon_IonCan1");

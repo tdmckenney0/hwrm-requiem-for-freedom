@@ -478,6 +478,16 @@ build =
 		Description =			"$7163" 
 	},
 
+	{ 
+		Type = 					Ship, 
+		ThingToBuild = 			"Vgr_WeaponPlatform_plasma",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"PlatformProduction",
+		DisplayPriority =		420,
+		DisplayedName =			"$11512",
+		Description =			"$1515" 
+	},
+
 	-- Utility ----------------
 
 	{ 
@@ -551,6 +561,15 @@ build =
 		Description =			"" 
 	},
 
-
-
+	-- Requiem For Freedom Subsystems
+	
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"vgr_hbc_production_fighter",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		0,
+		DisplayedName =			"$7100",
+		Description =			"$7101" 
+	},
 }

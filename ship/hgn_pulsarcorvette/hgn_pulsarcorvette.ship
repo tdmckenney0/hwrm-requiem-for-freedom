@@ -1,24 +1,38 @@
 NewShipType = StartShipConfig()
 NewShipType.displayedName = "$1508"
 NewShipType.sobDescription = "$1509"
-NewShipType.maxhealth = 400
+NewShipType.maxhealth = getShipNum(NewShipType, "maxhealth", 480*3)
 NewShipType.regentime = 0
 NewShipType.minRegenTime = 0
-NewShipType.sideArmourDamage = 1
-NewShipType.rearArmourDamage = 1
+NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
+NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
+setTacticsMults(NewShipType, "MAXSPEED", 0.90, 1.10, 1.0)
+setTacticsMults(NewShipType, "ENGINEACCEL", 1.20, 0.80, 1.0)
+setTacticsMults(NewShipType, "ENGINEBRAKE", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "THRUSTER", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "THRUSTERACCEL", 1.20, 0.80, 1.0)
+setTacticsMults(NewShipType, "THRUSTERBRAKE", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "ROTATION", 1.0, 1.10, 1.0)
+setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 1.10, 1.0)
+setTacticsMults(NewShipType, "ROTATIONBRAKE", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "WEAPONACCURACY", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "WEAPONDAMAGE", 1.20, 1.0, 1.0)
+setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.10, 0.90, 1.0)
+setTacticsMults(NewShipType, "FIRERATE", 1.0, 1.25, 1.0)
+setSpeedvsAccuracyApplied(NewShipType, 50.0, 5.0, 180, 1.0, 250, 1.0, 312, 0.90, 319, 0.80)
 NewShipType.isTransferable = 1
-NewShipType.useEngagementRanges = 0
-NewShipType.unitCapsNumber = 2
-NewShipType.SquadronSize = 3
+NewShipType.SquadronSize = getShipNum(NewShipType, "SquadronSize", 1)
+NewShipType.buildBatch = getShipNum(NewShipType, "buildBatch", 3)
 NewShipType.formationSpacing = 50
-NewShipType.passiveFormation = "Broad"
-NewShipType.defensiveFormation = "Delta"
-NewShipType.aggressiveFormation = "Claw"
+NewShipType.batchFormation = "Batch_delta"
+NewShipType.defaultROE = "Defensive"
+NewShipType.defaultStance = "Aggressive"
+NewShipType.holdSlots = 3
 NewShipType.mass = 15
-NewShipType.collisionMultiplier = 1
-NewShipType.thrusterMaxSpeed = 385*0.9
-NewShipType.mainEngineMaxSpeed = 385
-NewShipType.rotationMaxSpeed = 175*0.95
+NewShipType.collisionMultiplier = 0.8
+NewShipType.thrusterMaxSpeed = 385 -- 232*0.9
+NewShipType.mainEngineMaxSpeed = 385 -- 232
+NewShipType.rotationMaxSpeed = 171*0.95
 NewShipType.thrusterAccelTime = 2*1.075
 NewShipType.thrusterBrakeTime = 1*1.075
 NewShipType.mainEngineAccelTime = 2*1.075
@@ -62,8 +76,10 @@ NewShipType.AvoidanceFamily = "Strikecraft"
 NewShipType.DisplayFamily = "Corvette"
 NewShipType.AutoFormationFamily = "Corvette"
 NewShipType.CollisionFamily = "Small"
-NewShipType.ArmourFamily = "LightArmour"
-NewShipType.UnitCapsFamily = "Corvette"
+NewShipType.ArmourFamily = getShipStr(NewShipType, "ArmourFamily", "LightArmour")
+setSupplyValue(NewShipType, "Corvette", 3.0)
+setSupplyValue(NewShipType, "LayoutCorvette", 3.0)
+NewShipType.CombatFamily = "Corvette_Pulsar"
 NewShipType.fighterValue = 0
 NewShipType.corvetteValue = 10
 NewShipType.frigateValue = 0
@@ -105,6 +121,8 @@ NewShipType.visibleInSecondary = 1
 NewShipType.minLOD = 0.25
 NewShipType.goblinsStartFade = 410
 NewShipType.goblinsOff = 410
+NewShipType.upLOD = 800
+NewShipType.downLOD = 600
 NewShipType.minimumZoomFactor = 0.6
 NewShipType.selectionLimit = 150000
 NewShipType.preciseATILimit = 0
@@ -117,6 +135,7 @@ NewShipType.dockTimeBeforeStart = 0.5
 NewShipType.dockNrOfShipsInDockFormation = 1
 NewShipType.dockFormation = "dockline"
 NewShipType.queueFormation = "dockline"
+NewShipType.strikeGroupRadius = 25
 NewShipType.ignoreRaceWhenDocking = 0
 addAbility(NewShipType,"CanLaunch");
 NewShipType.launchTimeBetweenTwoFormations = 0.5
@@ -125,22 +144,23 @@ NewShipType.launchNrOfShipsInDockFormation = 1
 NewShipType.launchFormation = "dockline"
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
-addAbility(NewShipType,"CanAttack",1,3,1,0,0.35,1,"Munition, Corvette, Frigate, Fighter, SmallCapitalShip, BigCapitalShip, Utility","FlyRound_PulsarCorvette_vs_Frigate",
-    {Fighter = "FlyRound_PulsarCorvette_vs_Fighter"},
-    {Mothership = "flyround_PulsarCorvette_vs_Mothership"},
-    {SmallCapitalShip = "FlyRound_PulsarCorvette_vs_CapShip"},
-    {BigCapitalShip = "FlyRound_PulsarCorvette_vs_CapShip"},
-    {SubSystem = "FrontalVsSubSystem_Corvette"},
-    {Corvette = "FlyBy_Corvette_vs_Corvette"},
-    {Munition = "MoveToTargetAndShoot"}
-);
+addAbility(NewShipType,"CanAttack",1,1,1,1,0.35,1.5,"Munition, Corvette, Corvette_hw1, Frigate, SmallCapitalShip, BigCapitalShip, Utility,,,,,Fighter, Fighter_hw1","FlyRound_PulsarCorvette_vs_Frigate",
+{Fighter = "FlyRound_PulsarCorvette_vs_Fighter"},
+{Fighter_hw1 = "FlyRound_PulsarCorvette_vs_Fighter"},
+{Mothership = "flyround_PulsarCorvette_vs_Mothership"},
+{SmallCapitalShip = "FlyRound_PulsarCorvette_vs_CapShip"},
+{BigCapitalShip = "FlyRound_PulsarCorvette_vs_CapShip"},
+{SubSystem = "FrontalVsSubSystem_Corvette"},
+{Corvette = "FlyRound_PulsarCorvette_vs_Corvette"},
+{Corvette_hw1 = "FlyRound_PulsarCorvette_vs_Corvette"},
+{Munition = "MoveToTargetAndShoot"});
 addAbility(NewShipType,"GuardCommand",1,3000,500);
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
-addAbility(NewShipType,"HyperSpaceCommand",0,0,250,250,0,3.141592653)
+addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
 addAbility(NewShipType,"RetireAbility",1,0);
-addAbility(NewShipType,"MinelayerAbility",1,3.5);
+addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType, "hgn_pulsarnormalonly", "Weapon_Pulsar", "Fire")
+StartShipHardPointConfig(NewShipType,"Weapon_Pulsar","Hardpoint_Pulsar","Weapon","Innate","Ship","Hgn_Pulsar","","","","","","","","");
 addShield(NewShipType,"EMP",75,20);
 NewShipType.battleScarCoverage = 1
 NewShipType.battleScarBudgetLow  =  400
@@ -153,9 +173,14 @@ NewShipType.deadSobFadeTime = 0
 setEngineTrail(NewShipType,0,6,"trail_ribbon.tga",0.001,0.2,0.025,2);
 setEngineTrail(NewShipType,1,6,"trail_ribbon.tga",0.001,0.2,0.025,2);
 setEngineBurn(NewShipType,10,0.5,1,15,0,0.7,0.15,30);
-loadShipPatchList(NewShipType,"data:sound/sfx/ship/Hiigaran/Corvette/"
-                             ,0,"Engines/HCorvetteEng",""
-                             ,1,"Ambience/HCorvetteAmb","");
-NewShipType.minFalloffDamageDist = 0
-NewShipType.maxFalloffDamageDist = 175
-NewShipType.maxFalloffDamage = 125
+loadShipPatchList(NewShipType,"data:sound/sfx/ship/Hiigaran/Corvette/",0,"Engines/HCorvetteEng","",1,"Ambience/HCorvetteAmb","");
+NewShipType.minFalloffDamageDist = 25
+NewShipType.maxFalloffDamageDist = 25*3
+NewShipType.maxFalloffScuttleDamageDist = 25*4
+NewShipType.explosiveScuttleDamageOnDeath = 50
+NewShipType.maxFalloffForce = 25*10
+NewShipType.explosiveDamageOnDeath = 10
+NewShipType.radiusDamageEvadeMod = 1.1													 
+NewShipType.agileFlight = 1
+NewShipType.homingDistance = 2000
+NewShipType.homingDelay = 0.5

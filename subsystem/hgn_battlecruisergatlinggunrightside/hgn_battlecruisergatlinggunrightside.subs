@@ -3,8 +3,7 @@ NewSubSystemType = StartSubSystemConfig()
 NewSubSystemType.selectionLimit=1
 NewSubSystemType.type="Weapon"
 NewSubSystemType.hasIcon=0
-LoadHODFile(NewSubSystemType,1); 
 NewSubSystemType.AttackFamily="BigCapitalShip"
 NewSubSystemType.ArmourFamily="HeavyArmour"
 LoadSharedModel(NewSubSystemType,"Hgn_BattleCruiserKineticBurstCannon");
-StartSubSystemWeaponConfig(NewSubSystemType,"hgn_gatlinggunright","Weapon_TurretTop","Weapon_TurretTop"); -- Hgn_BattleCruiserKineticBurstCannon
+StartSubSystemWeaponConfig(NewSubSystemType,"hgn_battlecruisergatlinggunrightside","Weapon_TurretTop","Weapon_TurretTop"); -- Hgn_BattleCruiserKineticBurstCannon

@@ -1,9 +1,4 @@
---===========================================================================
---  Purpose : Lua definition file for Homeworld Ship.
---            Contains loading information and flight dynamics information (among other things?)
---
---  Copyright Relic Entertainment, Inc.  All rights reserved.
---===========================================================================
+
 NewShipType = StartMissileConfig()
 NewShipType.displayedName="$1650"
 NewShipType.sobDescription="$1651"
@@ -18,7 +13,7 @@ NewShipType.TOGroupScale=1
 NewShipType.TOGroupMergeSize=0
 NewShipType.mouseOverMinFadeSize=0.045
 NewShipType.mouseOverMaxFadeSize=0.1
-NewShipType.maxhealth=40
+NewShipType.maxhealth=50
 NewShipType.regentime=0
 NewShipType.sideArmourDamage=1
 NewShipType.rearArmourDamage=1
@@ -39,13 +34,14 @@ NewShipType.downLOD=405
 NewShipType.minimumZoomFactor=0.9
 NewShipType.selectionPriority=30
 NewShipType.weaponName="Vgr_HeavyFusionMissileLauncher"
+NewShipType.noCollisionTime=1.5
 NewShipType.lifeTime=30
 NewShipType.launchTime=0.5
 NewShipType.detectionDistance=1000
 NewShipType.sobDieTime=0.5
 NewShipType.density=1
-NewShipType.thrusterMaxSpeed=500
-NewShipType.mainEngineMaxSpeed=500
+NewShipType.thrusterMaxSpeed=400 -- 220*1.035
+NewShipType.mainEngineMaxSpeed=400 -- 220*1.035
 NewShipType.rotationMaxSpeed=190
 NewShipType.thrusterAccelTime=2
 NewShipType.thrusterBrakeTime=2
@@ -77,9 +73,8 @@ NewShipType.DockFamily="CantDock"
 NewShipType.AvoidanceFamily="DontAvoid"
 NewShipType.DisplayFamily="Munition"
 NewShipType.AutoFormationFamily="Fighter"
-NewShipType.ArmourFamily="MineArmour"
+NewShipType.ArmourFamily="HeavyMissileArmor"
 LoadHODFile(NewShipType,1);
-setEngineTrail(NewShipType,0,25,"missile_ribbon.tga",5.2,0.5,0.025,8);
+setEngineTrail(NewShipType,0,1.25,"missile_ribbon_new.tga",5.2,0.005,0.0049,3);
 setEngineBurn(NewShipType,15,0.5,1,15,0,0.7,0.1,25);
-loadShipPatchList(NewShipType,"data:sound/sfx/ship/vaygr/NonMilitary/Engines/"
-                             ,0,"VMissleEng");
+loadShipPatchList(NewShipType,"data:sound/sfx/ship/vaygr/NonMilitary/Engines/",0,"VMissleEng");

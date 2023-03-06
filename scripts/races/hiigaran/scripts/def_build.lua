@@ -189,7 +189,7 @@ build =
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		40,
-		DisplayedName =			"$7016",
+		DisplayedName =			"$1826",
 		Description =			"$7017"
 	},
 
@@ -199,7 +199,7 @@ build =
 		RequiredResearch =		"",
 		RequiredFleetSubSystems =	"Research",
 		DisplayPriority =		40,
-		DisplayedName =			"$7016",
+		DisplayedName =			"$1826",
 		Description =			"$7017"
 	},
 
@@ -243,16 +243,6 @@ build =
 		DisplayedName =			"$7020",
 		Description =			"$7021"
 	},
-    
-    -- { 
-	-- 	Type =					SubSystem, 
-	-- 	ThingToBuild =			"Hgn_C_Module_Aux_Fusion",
-	-- 	RequiredResearch =		"",
-	-- 	RequiredFleetSubSystems =	"Research",
-	-- 	DisplayPriority =		70,
-	-- 	DisplayedName =			"Auxiliary Fusion Reactor",
-	-- 	Description =			"Auxiliary Fusion Reactor"
-	-- },
 
 --	{ 
 --		Type =					SubSystem, 
@@ -553,10 +543,20 @@ build =
 
 	{ 
 		Type =					Ship, 
+		ThingToBuild =			"hgn_pulsarplatform",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"PlatformProduction",
+		DisplayPriority =		142,
+		DisplayedName =			"$2024",
+		Description =			"$2025"
+	},
+
+	{ 
+		Type =					Ship, 
 		ThingToBuild =			"Hgn_IonTurret",
 		RequiredResearch =		"PlatformIonWeapons",
 		RequiredShipSubSystems =	"PlatformProduction",
-		DisplayPriority =		142,
+		DisplayPriority =		143,
 		DisplayedName =			"$1514",
 		Description =			"$7065"
 	},
@@ -613,8 +613,44 @@ build =
 		DisplayedName =			"$7074",
 		Description =			"$7075"
 	},
+-- Requiem For Freedom Subsystems
 
-
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hgn_hbc_production_fighter",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		0,
+		DisplayedName =			"$7000",
+		Description =			"$7001"
+	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hgn_battlecruiserplasmabombturret",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		100,
+		DisplayedName =			"$11512",
+		Description =			"$11512"
+	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hgn_battlecruiserionbeamturret",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		110,
+		DisplayedName =			"$2026",
+		Description =			"$2027"
+	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hgn_battlecruiserminelauncher",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		120,
+		DisplayedName =			"$11520",
+		Description =			"$11520"
+	},
 -----------------------------------------------------------------------
 -- TEMP - All other ships here, for single player game ----------------
 	{ 

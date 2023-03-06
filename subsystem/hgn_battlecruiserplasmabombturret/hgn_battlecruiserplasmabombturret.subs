@@ -1,7 +1,7 @@
 
 NewSubSystemType = StartSubSystemConfig()
-NewSubSystemType.displayedName="Plasma Bomb Turret"
-NewSubSystemType.sobDescription="$2027"
+NewSubSystemType.displayedName="$11512"
+NewSubSystemType.sobDescription="$11512"
 NewSubSystemType.tacticalIcon="hexagon"
 NewSubSystemType.tacticalIconMinSize=0.0035
 NewSubSystemType.tacticalIconMinFadeSize=0.0045
@@ -21,7 +21,7 @@ NewSubSystemType.selectionLimit=5000
 NewSubSystemType.preciseATILimit=5000
 NewSubSystemType.selectionPriority=37.5
 NewSubSystemType.type="Weapon"
-NewSubSystemType.typeString="BCIonBeamTurret"
+NewSubSystemType.typeString="BCPlasmaBombTurret"
 NewSubSystemType.collateralDamage=100
 NewSubSystemType.inactiveTimeAfterDamage=90
 NewSubSystemType.activateHealthPercentage=0.1
@@ -29,11 +29,10 @@ NewSubSystemType.costToBuild=500
 NewSubSystemType.timeToBuild=35
 NewSubSystemType.isResearch=0
 NewSubSystemType.visible=1
-LoadHODFile(NewSubSystemType,1);
+LoadSharedModel(NewSubSystemType,"hgn_battlecruiserionbeamturret");
 NewSubSystemType.BuildFamily="SubSystem_Hgn"
 NewSubSystemType.AttackFamily="SubSystem"
 NewSubSystemType.DockFamily="CantDock"
 NewSubSystemType.DisplayFamily="SubSystemModule"
 NewSubSystemType.ArmourFamily="SubSystemArmour"
-LoadSharedModel(NewSubSystemType,"Hgn_BattleCruiserKineticBurstCannon");
-StartSubSystemWeaponConfig(NewSubSystemType,"hgn_plasmabatteryx6","Weapon_TurretTop","Weapon_TurretTop");
+StartSubSystemWeaponConfig(NewSubSystemType,"hgn_battlecruiserplasmabombturret","Weapon_IonCan1","Weapon_IonCan1");

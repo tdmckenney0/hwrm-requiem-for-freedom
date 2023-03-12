@@ -54,5 +54,6 @@ Animatics/
 *.tmp
 *.temp
 
-# Build Files
+# Build & Config Files
 *.toc
+*.env

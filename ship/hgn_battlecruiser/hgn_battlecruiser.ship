@@ -157,10 +157,12 @@ addAbility(NewShipType,"CanBuildShips",1,"SubSystem_Hgn","SubSystemModule");
 addAbility(NewShipType,"CanBeCaptured",160,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
-addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
+-- addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000); -- Cannot be used with `DefenseFieldAbility`.
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
 addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
+addAbility(NewShipType,"DefenseFieldAbility",0,0,1200,200,200,0.7,0.6,0,"defensefield_sphere_spray");
+addAbility(NewShipType,"DefenseFieldShieldAbility",0,1200,0,0);
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Generic","Destroyable","hgn_battlecruiserplasmabombturret","hgn_battlecruiserminelauncher","Hgn_BattleCruiserIonBeamTurret","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Generic","Destroyable","hgn_battlecruiserplasmabombturret","hgn_battlecruiserminelauncher","Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
@@ -175,8 +177,8 @@ StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar4","Weapo
 
 addShield(NewShipType,"EMP",10000,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_BattleCruiserEngine","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
-StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","","","","");
+StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","Hgn_C_Module_DefenseField","","","");
+StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Hgn_C_Module_Hyperspace","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","Hgn_C_Module_DefenseField","","","");
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.19,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg05",1, 0.13,0,0,0, 25,10,-100,30,35,75,62,75,0,0,0,80,0,0,0,50);

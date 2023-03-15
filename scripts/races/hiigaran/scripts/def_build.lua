@@ -616,6 +616,15 @@ build =
 -- Requiem For Freedom Subsystems
 
 	{ 
+		Type =					SubSystem, 
+		ThingToBuild =			"hgn_c_module_defensefield",
+		RequiredResearch =		"",
+		RequiredFleetSubSystems =	"Research",
+		DisplayPriority =		70,
+		DisplayedName =			"$7521",
+		Description =			"$7521"
+	},
+	{ 
 		Type = 					SubSystem, 
 		ThingToBuild = 			"hgn_hbc_production_fighter",
 		RequiredResearch =		"",

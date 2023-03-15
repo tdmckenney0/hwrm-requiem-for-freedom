@@ -2413,3 +2413,4 @@ hgn_battlecruiserplasmabombturret = Icon_Subsystem_IonTurret
 hgn_battlecruiserminelauncher = Icon_Subsystem_IonTurret
 hgn_hbc_production_fighter = Icon_Subsystem_Fighter
 vgr_hbc_production_fighter = Icon_Subsystem_Fighter
+hgn_c_module_defensefield = Icon_Subsystem_FireControl

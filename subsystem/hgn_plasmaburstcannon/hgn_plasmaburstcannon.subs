@@ -6,4 +6,4 @@ NewSubSystemType.hasIcon=0
 NewSubSystemType.AttackFamily="Frigate"
 NewSubSystemType.ArmourFamily="MediumArmour"
 LoadSharedModel(NewSubSystemType,"Hgn_KineticBurstCannon");
-StartSubSystemWeaponConfig(NewSubSystemType,"hgn_plasmaburstcannon","Weapon_Top","Weapon_Top"); -- Hgn_KineticBurstCannon
+StartSubSystemWeaponConfig(NewSubSystemType,"hgn_plasmaburstcannon","Weapon_Top","Weapon_TopPlasma"); -- Hgn_KineticBurstCannon

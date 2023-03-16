@@ -1,19 +1,19 @@
-StartWeaponConfig(NewWeaponType,"Gimble","Bullet","Vgr_Laser_Small","Normal",1500,5500,0,0,0,0,1,1,0,0.3,4,2,0,0,0,0,0.1,"Normal",0,0,0);
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","Hddread","Normal",2200,5500,0,0,0,0,1,1,0,0.3,2,2,0,0,0,0,0.1,"Normal",0,0,0);
 
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",5,8,""); --5, 8
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",5,7,"");
 
 setPenetration(NewWeaponType,5,1,
-{Unarmoured=1.0},
-{Unarmoured_hw1=1.0},
-{LightArmour=2.0},
-{LightArmour_hw1=4.0},
+{Unarmoured=1.0*3},
+{Unarmoured_hw1=1.0*3},
+{LightArmour=1.0},
+{LightArmour_hw1=1.0},
 {PlanetKillerArmour=0},
 {SwarmerArmor=0.10},
 {SpaceMineArmor=1},
 {TorpedoArmor=0},
 {HeavyMissileArmor=0},
 {SmallMissileArmor=0},
-{ResArmour=0.75},
+{ResArmour=1.35},
 {TurretArmour=3.0});
 
 setAccuracy(NewWeaponType,1,
@@ -27,7 +27,7 @@ setAngles(NewWeaponType,90,0,0,0,0);
 
 setMissProperties(NewWeaponType, 0.02, 0.04, 0.75, 0.95, 0.85, 0.85);
 
-setSpeedvsAccuracyAgainst(NewWeaponType, 1, 50.0, 1.85, 100, 1.0, 200.0, 1.0, 300, 1.1, 500, 1.5);
+setSpeedvsAccuracyAgainst(NewWeaponType, 1, 50.0, 1.5, 100, 1.0, 200.0, 1.0, 300, 1.1, 500, 1.5);
 
 setLifetimeMult(NewWeaponType, 1.65);
 

@@ -170,10 +170,10 @@ StartShipHardPointConfig(NewShipType,"Weapon_TurretTop4","Hardpoint_TurretTop4",
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop3","Hardpoint_TurretTop3","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturretleftside", "Hgn_BattleCruiserKineticBurstCannonLeftSide","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop2","Hardpoint_TurretTop2","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturret", "Hgn_BattleCruiserKineticBurstCannon","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop","Hardpoint_TurretTop","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturret", "Hgn_BattleCruiserKineticBurstCannon","","","","","","","","");
-StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar","Weapon_pulsar"); -- Hgn_PulsarSide
-StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar2","Weapon_pulsar2"); -- Hgn_PulsarSide
-StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar3","Weapon_pulsar3"); -- Hgn_PulsarSide
-StartShipWeaponConfig(NewShipType,"hgn_mshulldefensegun","Weapon_pulsar4","Weapon_pulsar4"); -- Hgn_PulsarSide
+StartShipWeaponConfig(NewShipType,"Hgn_PulsarSide","Weapon_pulsar","Weapon_pulsar"); -- Hgn_PulsarSide
+StartShipWeaponConfig(NewShipType,"Hgn_PulsarSide","Weapon_pulsar2","Weapon_pulsar2"); -- Hgn_PulsarSide
+StartShipWeaponConfig(NewShipType,"Hgn_PulsarSide","Weapon_pulsar3","Weapon_pulsar3"); -- Hgn_PulsarSide
+StartShipWeaponConfig(NewShipType,"Hgn_PulsarSide","Weapon_pulsar4","Weapon_pulsar4"); -- Hgn_PulsarSide
 
 addShield(NewShipType,"EMP",10000,20);
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_BattleCruiserEngine","","","","","","","","");

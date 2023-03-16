@@ -159,10 +159,10 @@ addAbility(NewShipType,"DefenseFieldShieldAbility",0,1200,0,0);
 NewShipType.noCombatGrouping = 1
 addCustomCode(NewShipType,"data:Ship/Hgn_Carrier/Hgn_Carrier.lua","","Create_Hgn_Carrier","Update_Hgn_Carrier","","Hgn_Carrier",4)
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense1","Weapon_HullDefense1"); -- Hgn_MSHullDefenseGun2
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense2","Weapon_HullDefense2"); -- Hgn_MSHullDefenseGun2
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense3","Weapon_HullDefense3"); -- Hgn_MSHullDefenseGun2
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense4","Weapon_HullDefense4"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense1","Weapon_HullDefense1"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense2","Weapon_HullDefense2"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense3","Weapon_HullDefense3"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense4","Weapon_HullDefense4"); -- Hgn_MSHullDefenseGun2
 addShield(NewShipType,"EMP",10000,20);
 StartShipHardPointConfig(NewShipType,"Production 1","HardpointProduction1","System","Production","Destroyable","","Hgn_C_Production_Fighter","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Production 2","HardpointProduction2","System","Production","Destroyable","","Hgn_C_Production_Corvette","","","","","","","");

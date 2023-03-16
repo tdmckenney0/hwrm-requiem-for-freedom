@@ -32,6 +32,16 @@ effects =
             maximum = 0,
             markers = { "" }
         },
+        animation4 =
+        {
+            name = "Weapon_IonCanKpr",
+            length = 6,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = { "" }
+        },
     },
     events =
     {
@@ -67,7 +77,7 @@ effects =
             { "marker",   "Weapon_IonCan1_Muzzle" },
             { "fx",       "muzzle_flash_combo_small_capital" },
             { "sound",    "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL" },
-            { "fx_scale", "2" }
+            { "fx_scale", "3" }
         },
         event5 =
         {
@@ -76,7 +86,7 @@ effects =
             { "marker",   "Weapon_IonCan1Slave_Muzzle" },
             { "fx",       "muzzle_flash_combo_small_capital" },
             { "sound",    "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL" },
-            { "fx_scale", "2" }
+            { "fx_scale", "3" }
         },
         event6 =
         {
@@ -92,7 +102,7 @@ effects =
             { "marker",   "Weapon_IonCan1_Muzzle" },
             { "fx",       "torpedo_steam_spray" },
             { "sound",    "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH" },
-            { "fx_scale", "4" }
+            { "fx_scale", "3" }
         },
         event8 =
         {
@@ -101,7 +111,32 @@ effects =
             { "marker",   "Weapon_IonCan1Slave_Muzzle" },
             { "fx",       "torpedo_steam_spray" },
             { "sound",    "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH" },
-            { "fx_scale", "4" }
+            { "fx_scale", "3" }
+        },
+        event9 =
+        {
+            { "anim",     "Weapon_IonCanKpr" },
+            { "animtime", "0" },
+            { "marker",   "Weapon_IonCan1_Muzzle" },
+            { "fx",       "ion_beam_kpr_charge_combo" },
+            { "sound",    "WEAPON/CARRIER/FIRE/WEAPON_BATTLECRUISER_ION_CANNON_BEAM" },
+            { "fx_scale", "1" },
+        },
+        event10 =
+        {
+            { "anim",     "Weapon_IonCanKpr" },
+            { "animtime", "0.25" },
+            { "marker",   "Weapon_IonCan1Slave_Muzzle" },
+            { "fx",       "ion_beam_kpr_charge_combo" },
+            { "sound",    "WEAPON/CARRIER/FIRE/WEAPON_BATTLECRUISER_ION_CANNON_BEAM" },
+            { "fx_scale", "1" },
+        },
+        event11 =
+        {
+            { "anim",     "Weapon_IonCanKpr" },
+            { "animtime", "0.2" },
+            { "marker",   "vent1" },
+            { "fx",       "ion_cannon_steam_spray" },
         },
     }
 }

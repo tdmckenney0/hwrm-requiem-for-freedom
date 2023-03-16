@@ -151,7 +151,7 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 LoadModel(NewShipType,1);
 StartShipWeaponConfig(NewShipType,"Vgr_HeavyFusionMissileLauncher","Weapon_Missile","Fire_Missile");
-StartShipWeaponConfig(NewShipType,"vgr_hulldefensegun","Weapon_HullDefense","Fire_Missile1"); -- Vgr_ConcussionMissileLauncherFrigate
+StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncherFrigate","Weapon_HullDefense","Fire_Missile1"); -- Vgr_ConcussionMissileLauncherFrigate
 addShield(NewShipType,"EMP",310,20);
 NewShipType.battleScarCoverage=2
 NewShipType.battleScarBudgetLow = 400

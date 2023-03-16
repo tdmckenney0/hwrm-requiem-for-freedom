@@ -171,8 +171,8 @@ addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
 addAbility(NewShipType,"RetireAbility",1,0);
 addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"vgr_bomberplasmadriver","Weapon_L","Weapon_L"); -- Vgr_BombLauncher
-StartShipWeaponConfig(NewShipType,"vgr_bomberplasmadriver","Weapon_R","Weapon_R"); -- Vgr_BombLauncher
+StartShipWeaponConfig(NewShipType,"vgr_bomberplasmadriver","Weapon_L",""); -- Vgr_BombLauncher
+StartShipWeaponConfig(NewShipType,"vgr_bomberplasmadriver","Weapon_R",""); -- Vgr_BombLauncher
 addShield(NewShipType,"EMP",75,20);
 NewShipType.battleScarCoverage = 0
 NewShipType.sobDieTime = 2

@@ -6,4 +6,4 @@ NewSubSystemType.hasIcon=0
 NewSubSystemType.AttackFamily="BigCapitalShip"
 NewSubSystemType.ArmourFamily="HeavyArmour"
 LoadSharedModel(NewSubSystemType,"Hgn_BattleCruiserKineticBurstCannon");
-StartSubSystemWeaponConfig(NewSubSystemType,"hgn_battlecruiserplasmaburstturretleftside","Weapon_TurretTop","Weapon_TurretTop"); -- Hgn_BattleCruiserKineticBurstCannon
+StartSubSystemWeaponConfig(NewSubSystemType,"hgn_battlecruiserplasmaburstturretleftside","Weapon_TurretTop","Weapon_TurretTopPlasma"); -- Hgn_BattleCruiserKineticBurstCannon

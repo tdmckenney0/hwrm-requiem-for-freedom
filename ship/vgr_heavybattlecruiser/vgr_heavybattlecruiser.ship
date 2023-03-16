@@ -183,7 +183,7 @@ StartShipWeaponConfig(NewShipType,"Vgr_HBCLaser","Weapon_BCHeavyLaser4",""); -- 
 addShield(NewShipType,"EMP",10000,20);
 
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Vgr_BattleCruiserEngine","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Heavy Fusion Missile Launcher","Weapon_MissileBattery","Weapon","Innate","Damageable","Vgr_HeavyFusionMissileLauncherBC","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Heavy Fusion Missile Launcher","Weapon_MissileBattery","Weapon","Innate","Damageable","Vgr_HeavyFusionMissileLauncherHBC","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Vgr_C_Module_Hyperspace","Vgr_C_Module_HyperspaceInhibitor","Vgr_C_Module_FireControl","vgr_hbc_production_fighter","","","");
 StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Vgr_C_Module_Hyperspace","Vgr_C_Module_HyperspaceInhibitor","Vgr_C_Module_FireControl","vgr_hbc_production_fighter","","","");
 

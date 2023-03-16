@@ -2414,5 +2414,7 @@ hgn_battlecruisergatlinggunturretbottom = Icon_Subsystem_IonTurret
 hgn_battlecruiserminelaunchertop = Icon_Subsystem_IonTurret
 hgn_battlecruiserminelauncherbottom = Icon_Subsystem_IonTurret
 hgn_hbc_production_fighter = Icon_Subsystem_Fighter
-vgr_hbc_production_fighter = Icon_Subsystem_Fighter
 hgn_c_module_defensefield = Icon_Subsystem_FireControl
+
+vgr_hbc_production_fighter = Icon_Subsystem_Fighter
+VGR_HEAVYFUSIONMISSILELAUNCHERHBC 	= Icon_Subsystem_TorpedoLauncher

@@ -147,7 +147,7 @@ addAbility(NewShipType,"ShipHold",1,0,50,"rallypoint","Fighter",25,{Fighter = "3
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand", 1, 0, 0, 0, 0, 3);
-addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.2,"Munition,Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,,,,,Corvette, Corvette_hw1, Fighter, Fighter_hw1","flyround_destroyer",
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.2,"Munition,Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,,,,,Corvette, Corvette_hw1, Fighter, Fighter_hw1","circlestrafe",
 {Fighter = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
 {Fighter_hw1 = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
 {Corvette = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
@@ -169,7 +169,7 @@ LoadSharedModel(NewShipType, "vgr_battlecruiser");
 
 AddShipAbility(NewShipType,"Cloak",1,"ThisShipOnly",0); -- This function is not redundant; it enables the range wireframe to be shown around the ship. 
 
-StartShipWeaponConfig(NewShipType,"vgr_hbcforwardweapon","Weapon_BCUberPulse","Weapon_BCUberPulse"); -- Vgr_BCForwardWeapon
+StartShipWeaponConfig(NewShipType,"vgr_hbcforwardweapon","Weapon_BCUberPulse","Weapon_Superbeam"); -- Vgr_BCForwardWeapon
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD1","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD2","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD3","Fire_Missile");

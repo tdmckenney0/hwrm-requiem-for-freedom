@@ -1,11 +1,10 @@
-StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Dread_Bomb","Normal",5500,6000,0,0,0,0,1,1,1,0.5,3,15,1,0,45,45,0.1,"Normal",0,0,0)
-
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",2500,2500,"");
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Bullet", "kinetic_largesaj", "Normal", 5000, 6000, 0, 0, 0, 0, 1, 1, 1, 0.2, 5, 10, 1, 0, 60, 60, 1, "Normal", 0, 0, 0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",150,150,"");
 AddWeaponResult(NewWeaponType,"Hit","Push","Target",150,150,"")
 
 setAngles(NewWeaponType,10,-160,160,0,60)
 
-setMiscValues(NewWeaponType,4,0)
+setMiscValues(NewWeaponType,4,0.1)
 
 setPenetration(NewWeaponType,5,1,
 {Unarmoured=1,},
@@ -37,3 +36,4 @@ setAccuracy(NewWeaponType,1,
 {Capturer=1,},
 {Chimera=1,})
 
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");

@@ -635,12 +635,12 @@ build =
 	},
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"hgn_battlecruiserplasmabombturret",
+		ThingToBuild = 			"hgn_battlecruisergatlinggunturret",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,
-		DisplayedName =			"$11512",
-		Description =			"$11512"
+		DisplayedName =			"$2044",
+		Description =			"$2049"
 	},
 	{ 
 		Type = 					SubSystem, 

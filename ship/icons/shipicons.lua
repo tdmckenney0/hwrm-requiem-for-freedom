@@ -2409,7 +2409,7 @@ vgr_heavybattlecruiser = Vgr_BattleCruiser
 
 -- Requiem For Freedom Subsystems
 hgn_heavybattlecruiserionbeamturret = Icon_Subsystem_IonTurret
-hgn_battlecruiserplasmabombturret = Icon_Subsystem_IonTurret
+hgn_battlecruisergatlinggunturret = Icon_Subsystem_IonTurret
 hgn_battlecruiserminelauncher = Icon_Subsystem_IonTurret
 hgn_hbc_production_fighter = Icon_Subsystem_Fighter
 vgr_hbc_production_fighter = Icon_Subsystem_Fighter

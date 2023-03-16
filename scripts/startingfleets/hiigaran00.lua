@@ -91,6 +91,14 @@ PersistantData = {
                 {
                     index = 0,
                     name = "HGN_C_MODULE_HYPERSPACE",
+                },
+                {
+                    index = 0,
+                    name = "hgn_battlecruisergatlinggunturrettop",
+                },
+                {
+                    index = 0,
+                    name = "hgn_battlecruiserminelauncherbottom",
                 }
             },
             shiphold = {},

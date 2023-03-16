@@ -82,6 +82,16 @@ effects =
 			maximum = 0,
 			markers = { "" }
 		},
+		animation9 =
+		{
+			name = "Weapon_NormalBeam",
+			length = 5,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+			maximum = 0,
+			markers = { "" }
+		},
 	},
 	events =
 	{
@@ -473,6 +483,60 @@ effects =
 		superbeam6 =
 		{
 			{ "anim",     "Weapon_Superbeam" },
+			{ "animtime", "0.1" },
+			{ "marker",   "Weapon_BCUberPulseSlave1_Muzzle" },
+			{ "fx",       "ion_cannon_steam_spray" },
+			{ "sound",    "DAMAGE/SMOKE/ION_BEAM_DISCHARGE" },
+			{ "fx_scale", "3" },
+		},
+		normalbeam1 =
+		{
+			{ "anim",     "Weapon_NormalBeam" },
+			{ "animtime", "0" },
+			{ "marker",   "Weapon_BCUberPulse_Muzzle" },
+			{ "fx",       "ion_beam_charge_combo_kus" },
+			{ "sound",    "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM" },
+			{ "fx_scale", "3" },
+		},
+		normalbeam2 =
+		{
+			{ "anim",     "Weapon_NormalBeam" },
+			{ "animtime", "0.1" },
+			{ "marker",   "Weapon_BCUberPulse_Muzzle" },
+			{ "fx",       "ion_cannon_steam_spray" },
+			{ "sound",    "DAMAGE/SMOKE/ION_BEAM_DISCHARGE" },
+			{ "fx_scale", "3" },
+		},
+		normalbeam3 =
+		{
+			{ "anim",     "Weapon_NormalBeam" },
+			{ "animtime", "0" },
+			{ "marker",   "Weapon_BCUberPulseSlave_Muzzle" },
+			{ "fx",       "ion_beam_charge_combo_kus" },
+			{ "sound",    "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM" },
+			{ "fx_scale", "3" },
+		},
+		normalbeam4 =
+		{
+			{ "anim",     "Weapon_NormalBeam" },
+			{ "animtime", "0.1" },
+			{ "marker",   "Weapon_BCUberPulseSlave_Muzzle" },
+			{ "fx",       "ion_cannon_steam_spray" },
+			{ "sound",    "DAMAGE/SMOKE/ION_BEAM_DISCHARGE" },
+			{ "fx_scale", "3" },
+		},
+		normalbeam5 =
+		{
+			{ "anim",     "Weapon_NormalBeam" },
+			{ "animtime", "0" },
+			{ "marker",   "Weapon_BCUberPulseSlave1_Muzzle" },
+			{ "fx",       "ion_beam_charge_combo_kus" },
+			{ "sound",    "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM" },
+			{ "fx_scale", "3" },
+		},
+		normalbeam6 =
+		{
+			{ "anim",     "Weapon_NormalBeam" },
 			{ "animtime", "0.1" },
 			{ "marker",   "Weapon_BCUberPulseSlave1_Muzzle" },
 			{ "fx",       "ion_cannon_steam_spray" },

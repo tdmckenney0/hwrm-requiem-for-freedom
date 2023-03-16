@@ -147,7 +147,7 @@ addAbility(NewShipType,"ShipHold",1,0,50,"rallypoint","Fighter, Corvette",25,{Fi
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
-addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.2,"Munition,Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,,,,,Corvette, Corvette_hw1, Fighter, Fighter_hw1","flyround_destroyer",
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.2,"Munition,Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,,,,,Corvette, Corvette_hw1, Fighter, Fighter_hw1","circlestrafe",
 {Fighter = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
 {Fighter_hw1 = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
 {Corvette = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
@@ -165,7 +165,7 @@ addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
 addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"Vgr_BCForwardWeapon","Weapon_BCUberPulse","Weapon_BCUberPulse");
+StartShipWeaponConfig(NewShipType,"Vgr_BCForwardWeapon","Weapon_BCUberPulse","Weapon_NormalBeam");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD1","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD2","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD3","Fire_Missile");

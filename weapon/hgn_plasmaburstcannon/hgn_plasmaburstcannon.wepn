@@ -1,4 +1,4 @@
-StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Bullet", "improved_plasma_bomb", "Normal", 3000, 5000, 0, 0, 0, 0, 1, 1, 1, 0.25, 1, 5, 1, 0, 120, 120, 0.1, "Normal", 1, 0, 0) -- FlakShell
+StartWeaponConfig(NewWeaponType, "AnimatedTurret", "Bullet", "dread_bomb", "Normal", 3000, 5000, 0, 0, 0, 0, 1, 1, 1, 0.25, 1, 5, 1, 0, 120, 120, 0.1, "Normal", 1, 0, 0) -- FlakShell
 
 AddWeaponResult(NewWeaponType, "Hit", "SpawnWeaponFire", "Target", 0, 0, "hgn_plasmaburst")
 AddWeaponResult(NewWeaponType, "Miss", "SpawnWeaponFire", "Target", 0, 0, "hgn_plasmaburst")

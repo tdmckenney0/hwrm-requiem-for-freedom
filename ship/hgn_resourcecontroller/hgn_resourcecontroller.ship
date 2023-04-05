@@ -150,10 +150,10 @@ addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense1","Weapon_HullDefense1"); -- Hgn_MSHullDefenseGun2
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense3","Weapon_HullDefense3"); -- Hgn_MSHullDefenseGun2
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense5","Weapon_HullDefense5"); -- Hgn_MSHullDefenseGun2
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense8","Weapon_HullDefense8"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense1","Weapon_HullDefense1"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense3","Weapon_HullDefense3"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense5","Weapon_HullDefense5"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense8","Weapon_HullDefense8"); -- Hgn_MSHullDefenseGun2
 addShield(NewShipType,"EMP",220,20);
 NewShipType.battleScarCoverage = 2
 NewShipType.battleScarBudgetLow = 400

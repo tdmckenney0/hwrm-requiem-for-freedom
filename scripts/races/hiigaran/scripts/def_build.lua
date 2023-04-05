@@ -616,6 +616,15 @@ build =
 -- Requiem For Freedom Subsystems
 
 	{ 
+		Type =					SubSystem, 
+		ThingToBuild =			"hgn_c_module_defensefield",
+		RequiredResearch =		"",
+		RequiredFleetSubSystems =	"Research",
+		DisplayPriority =		70,
+		DisplayedName =			"$7521",
+		Description =			"$7521"
+	},
+	{ 
 		Type = 					SubSystem, 
 		ThingToBuild = 			"hgn_hbc_production_fighter",
 		RequiredResearch =		"",
@@ -626,28 +635,37 @@ build =
 	},
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"hgn_battlecruiserplasmabombturret",
+		ThingToBuild = 			"hgn_battlecruisergatlinggunturrettop",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		100,
-		DisplayedName =			"$11512",
-		Description =			"$11512"
+		DisplayedName =			"$2044",
+		Description =			"$2049"
 	},
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"hgn_battlecruiserionbeamturret",
+		ThingToBuild = 			"hgn_battlecruisergatlinggunturretbottom",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		110,
-		DisplayedName =			"$2026",
-		Description =			"$2027"
+		DisplayedName =			"$2044",
+		Description =			"$2049"
 	},
 	{ 
 		Type = 					SubSystem, 
-		ThingToBuild = 			"hgn_battlecruiserminelauncher",
+		ThingToBuild = 			"hgn_battlecruiserminelaunchertop",
 		RequiredResearch =		"",
 		RequiredShipSubSystems =	"",
 		DisplayPriority =		120,
+		DisplayedName =			"$11520",
+		Description =			"$11520"
+	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hgn_battlecruiserminelauncherbottom",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		130,
 		DisplayedName =			"$11520",
 		Description =			"$11520"
 	},

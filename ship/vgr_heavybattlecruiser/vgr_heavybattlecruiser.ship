@@ -147,7 +147,7 @@ addAbility(NewShipType,"ShipHold",1,0,50,"rallypoint","Fighter",25,{Fighter = "3
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"WaypointMove");
 addAbility(NewShipType,"HyperSpaceCommand", 1, 0, 0, 0, 0, 3);
-addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.2,"Munition,Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,,,,,Corvette, Corvette_hw1, Fighter, Fighter_hw1","flyround_destroyer",
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1.2,"Munition,Capturer,Frigate,SmallCapitalShip,BigCapitalShip,Mothership,Utility,,,,,Corvette, Corvette_hw1, Fighter, Fighter_hw1","circlestrafe",
 {Fighter = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
 {Fighter_hw1 = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
 {Corvette = "MoveToTargetAndShoot"}, -- MoveToTargetAndShoot
@@ -160,14 +160,16 @@ addAbility(NewShipType,"CanBuildShips",1,"SubSystem_Vgr, Fighter_Vgr, Battlecrui
 addAbility(NewShipType,"CanBeCaptured",160,0.1,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap"); 
 addAbility(NewShipType,"CanBeRepaired","RepCap");
-addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
+addAbility(NewShipType,"CloakAbility",0,2,2500,4000,3,100,1,1000);
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
 addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 
 LoadSharedModel(NewShipType, "vgr_battlecruiser");
 
-StartShipWeaponConfig(NewShipType,"vgr_hbcforwardweapon","Weapon_BCUberPulse","Weapon_BCUberPulse"); -- Vgr_BCForwardWeapon
+AddShipAbility(NewShipType,"Cloak",1,"ThisShipOnly",0); -- This function is not redundant; it enables the range wireframe to be shown around the ship. 
+
+StartShipWeaponConfig(NewShipType,"vgr_hbcforwardweapon","Weapon_BCUberPulse","Weapon_Superbeam"); -- Vgr_BCForwardWeapon
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD1","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD2","Fire_Missile");
 StartShipWeaponConfig(NewShipType,"Vgr_HullDefenseGun","Weapon_HullD3","Fire_Missile");
@@ -181,9 +183,9 @@ StartShipWeaponConfig(NewShipType,"Vgr_HBCLaser","Weapon_BCHeavyLaser4",""); -- 
 addShield(NewShipType,"EMP",10000,20);
 
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Vgr_BattleCruiserEngine","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Heavy Fusion Missile Launcher","Weapon_MissileBattery","Weapon","Innate","Damageable","Vgr_HeavyFusionMissileLauncherBC","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Vgr_C_Module_Hyperspace","Vgr_C_Module_CloakGenerator","Vgr_C_Module_HyperspaceInhibitor","Vgr_C_Module_FireControl","vgr_hbc_production_fighter","","","");
-StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Vgr_C_Module_Hyperspace","Vgr_C_Module_CloakGenerator","Vgr_C_Module_HyperspaceInhibitor","Vgr_C_Module_FireControl","vgr_hbc_production_fighter","","","");
+StartShipHardPointConfig(NewShipType,"Heavy Fusion Missile Launcher","Weapon_MissileBattery","Weapon","Innate","Damageable","Vgr_HeavyFusionMissileLauncherHBC","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Vgr_C_Module_Hyperspace","Vgr_C_Module_HyperspaceInhibitor","Vgr_C_Module_FireControl","vgr_hbc_production_fighter","","","");
+StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Vgr_C_Module_Hyperspace","Vgr_C_Module_HyperspaceInhibitor","Vgr_C_Module_FireControl","vgr_hbc_production_fighter","","","");
 
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.40,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
 SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg02",1, 0.19,0,0,0, 30,-20,200,25,300,150,85,50,0,0,0,85,0,0,0,50);

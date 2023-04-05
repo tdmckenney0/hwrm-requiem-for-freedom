@@ -152,7 +152,7 @@ LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Bottom","Hardpoint_Bottom","Weapon","Innate","Ship","Vgr_PulseCannonAssaultFrigateBottom","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Left","Hardpoint_Left","Weapon","Innate","Ship","Vgr_PulseCannonAssaultFrigateLeft","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_Right","Hardpoint_Right","Weapon","Innate","Ship","Vgr_PulseCannonAssaultFrigateRight","","","","","","","","");
-StartShipWeaponConfig(NewShipType,"vgr_hulldefensegun","Weapon_Missile","Fire_Missile"); -- Vgr_ConcussionMissileLauncherFrigate
+StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncherFrigate","Weapon_Missile","Fire_Missile"); -- Vgr_ConcussionMissileLauncherFrigate
 addShield(NewShipType,"EMP",310,20);
 NewShipType.battleScarCoverage=2
 NewShipType.battleScarBudgetLow = 400

@@ -16,7 +16,7 @@ PersistantData = {
         },
         {
           index = 0,
-          name = "VGR_C_MODULE_HYPERSPACE",
+          name = "VGR_C_MODULE_PLATFORMCONTROL",
         },
         {
           index = 0,

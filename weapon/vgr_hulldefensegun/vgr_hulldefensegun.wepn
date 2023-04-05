@@ -1,14 +1,36 @@
-StartWeaponConfig(NewWeaponType, "Fixed", "Missile", "Vgr_SmallMissile", "Normal", 150, 9000, 0, 0, 0, 2, 1, 0, 1, 7.5, 0, 0, 1, 1, 0, 0, 0.1, "Normal", 0, 0, 0);
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","Vgr_Laser_Small","Normal",1500,5500,0,0,0,0,1,1,0,0.3,4,2,0,0,0,0,0.1,"Normal",0,0,0);
 
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,120,"")
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",5,8,""); --5, 8
 
-AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Vgr_SmallMissileBurst");
-AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Vgr_SmallMissileBurst");
+setPenetration(NewWeaponType,5,1,
+{Unarmoured=1.0},
+{Unarmoured_hw1=1.0},
+{LightArmour=2.0},
+{LightArmour_hw1=4.0},
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{ResArmour=0.75},
+{TurretArmour=3.0});
 
-setPenetration(NewWeaponType,5,1, {PlanetKillerArmour=0});
+setAccuracy(NewWeaponType,1,
+{Fighter=0.90},
+{Fighter_hw1=0.91},
+{Corvette=0.95},
+{Corvette_hw1=0.96},
+{munition=0.85});
 
-setAccuracy(NewWeaponType,1);
+setAngles(NewWeaponType,90,0,0,0,0);
 
-setAngles(NewWeaponType,180,0,0,0,0);
+setMissProperties(NewWeaponType, 0.02, 0.04, 0.75, 0.95, 0.85, 0.85);
 
-setMiscValues(NewWeaponType,0,3);
+setSpeedvsAccuracyAgainst(NewWeaponType, 1, 50.0, 1.85, 100, 1.0, 200.0, 1.0, 300, 1.1, 500, 1.5);
+
+setLifetimeMult(NewWeaponType, 1.65);
+
+setBallistics(NewWeaponType,0,0.0);
+
+setFireMultFactor(NewWeaponType, 1.0);

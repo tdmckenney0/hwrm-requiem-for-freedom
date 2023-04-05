@@ -151,22 +151,24 @@ addAbility(NewShipType,"CanBuildShips",1,"Fighter_Hgn, Corvette_Hgn, Frigate_Hgn
 addAbility(NewShipType,"CanBeCaptured",160,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
-addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000);
+-- addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000); -- Cannot be used with `DefenseFieldAbility`.
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
+addAbility(NewShipType,"DefenseFieldAbility",0,0,1200,200,200,0.7,0.6,0,"defensefield_sphere_spray");
+addAbility(NewShipType,"DefenseFieldShieldAbility",0,1200,0,0);
 NewShipType.noCombatGrouping = 1
 addCustomCode(NewShipType,"data:Ship/Hgn_Carrier/Hgn_Carrier.lua","","Create_Hgn_Carrier","Update_Hgn_Carrier","","Hgn_Carrier",4)
 LoadModel(NewShipType,1);
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense1","Weapon_HullDefense1"); -- Hgn_MSHullDefenseGun2
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense2","Weapon_HullDefense2"); -- Hgn_MSHullDefenseGun2
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense3","Weapon_HullDefense3"); -- Hgn_MSHullDefenseGun2
-StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun","Weapon_HullDefense4","Weapon_HullDefense4"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense1","Weapon_HullDefense1"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense2","Weapon_HullDefense2"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense3","Weapon_HullDefense3"); -- Hgn_MSHullDefenseGun2
+StartShipWeaponConfig(NewShipType,"Hgn_MSHullDefenseGun2","Weapon_HullDefense4","Weapon_HullDefense4"); -- Hgn_MSHullDefenseGun2
 addShield(NewShipType,"EMP",10000,20);
 StartShipHardPointConfig(NewShipType,"Production 1","HardpointProduction1","System","Production","Destroyable","","Hgn_C_Production_Fighter","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Production 2","HardpointProduction2","System","Production","Destroyable","","Hgn_C_Production_Corvette","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Production 3","HardpointProduction3","System","Production","Destroyable","","Hgn_C_Production_Frigate","Hgn_C_Production_FrigateAdvanced","","","","","","");
-StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Research","Hgn_C_Module_Hyperspace","Hgn_C_Module_PlatformControl","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","Hgn_C_Module_ResearchAdvanced","Hgn_C_Module_BuildSpeed");
-StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Hgn_C_Module_Research","Hgn_C_Module_Hyperspace","Hgn_C_Module_PlatformControl","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","Hgn_C_Module_ResearchAdvanced","Hgn_C_Module_BuildSpeed");
+StartShipHardPointConfig(NewShipType,"Generic 1","HardpointGeneric1","System","Generic","Destroyable","","Hgn_C_Module_Research","Hgn_C_Module_Hyperspace","Hgn_C_Module_PlatformControl","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","Hgn_C_Module_ResearchAdvanced","Hgn_C_Module_BuildSpeed","Hgn_C_Module_DefenseField");
+StartShipHardPointConfig(NewShipType,"Generic 2","HardpointGeneric2","System","Generic","Destroyable","","Hgn_C_Module_Research","Hgn_C_Module_Hyperspace","Hgn_C_Module_PlatformControl","Hgn_C_Module_CloakGenerator","Hgn_C_Module_HyperspaceInhibitor","Hgn_C_Module_FireControl","Hgn_C_Module_ResearchAdvanced","Hgn_C_Module_BuildSpeed","Hgn_C_Module_DefenseField");
 StartShipHardPointConfig(NewShipType,"Sensors 1","HardpointSensors1","System","Sensors","Destroyable","","Hgn_C_Sensors_DetectHyperspace","Hgn_C_Sensors_AdvancedArray","Hgn_C_Sensors_DetectCloaked","","","","","");
 StartShipHardPointConfig(NewShipType,"Engine","Hardpoint_Engine","System","Innate","Damageable","Hgn_C_Engine","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Resource","Hardpoint_Resource","System","Innate","Damageable","Hgn_C_Innate_Resource","","","","","","","","");

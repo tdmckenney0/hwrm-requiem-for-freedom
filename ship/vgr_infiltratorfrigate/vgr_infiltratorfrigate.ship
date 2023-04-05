@@ -151,7 +151,7 @@ addAbility(NewShipType,"CanBeRepaired","RepCap");
 addAbility(NewShipType,"RetireAbility",1,1);
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Right","Hardpoint_Right","Weapon","Innate","Ship","vgr_pulsecannoninfiltratorfrigate","","","","","","","",""); -- Vgr_FlechetteCannonInfiltratorFrigate
-StartShipWeaponConfig(NewShipType,"vgr_hulldefensegun","Weapon_HullDefense","Fire_Missile1"); -- Vgr_ConcussionMissileLauncherFrigate
+StartShipWeaponConfig(NewShipType,"Vgr_ConcussionMissileLauncherFrigate","Weapon_HullDefense","Fire_Missile1"); -- Vgr_ConcussionMissileLauncherFrigate
 StartShipWeaponConfig(NewShipType,"Vgr_InfiltrationPodLauncher","Weapon_PodLauncher","Fire_Missile");
 addShield(NewShipType,"EMP",310,20);
 NewShipType.battleScarCoverage=2

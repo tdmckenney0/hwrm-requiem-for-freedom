@@ -1,11 +1,19 @@
-StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "Vgr_Laser", "Normal", 6000, 15000, 0, 0, 0, 0, 1, 1, 1, 15, 0, 0, 0, 0, 260, 40, 0.1, "Normal", 1, 0, 0);
+StartWeaponConfig(NewWeaponType, "Gimble", "InstantHit", "Vgr_IonBeam", "Normal", 0, 15000, 0, 5, 1, 0, 20, 0, 1, 5, 0, 0, 0, 0, 35, 20, 0.1, "Normal", 0, 0, 0)
 
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",2000,2000,"")
-AddWeaponResult(NewWeaponType,"Hit","Push","Target",50,50,"")
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",4500,4500,"");
+AddWeaponResult(NewWeaponType,"Hit","Push","Target",-25,-25,"");
 
-setPenetration(NewWeaponType,100,1,{TurretArmour=0.5},{PlanetKillerArmour=0},{SubSystemArmour=0.3});
+setPenetration(NewWeaponType,30,1,
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{SubSystemArmour=0.3},
+{ResArmour=0.2});
 
-setAccuracy(NewWeaponType,1,{Fighter=0},{Corvette=0},{munition=0},{Frigate=0.4,damage=1});
+setAccuracy(NewWeaponType,1,{Fighter=0},{Corvette=0},{munition=0},{Frigate=0.7,damage=1});
 
 setAngles(NewWeaponType,6,0,0,0,0);
 

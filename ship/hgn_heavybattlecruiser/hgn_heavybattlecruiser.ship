@@ -158,22 +158,22 @@ addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Mi
 addAbility(NewShipType,"CanBeCaptured",160,0.5,"CapCap");
 addAbility(NewShipType,"CanBeSalvageCaptured",0,1,0,0,1,"SalCap");
 addAbility(NewShipType,"CanBeRepaired","RepCap");
--- addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000); 
+-- addAbility(NewShipType,"CloakAbility",0,2,2000,4000,3,100,1,1000); -- Cannot be used with `DefenseFieldAbility`.
 addAbility(NewShipType,"RetireAbility",1,1);
 addAbility(NewShipType,"HyperspaceInhibitorAbility",0,12000);
-addAbility(NewShipType,"DefenseFieldAbility",1,0,4000,200,200,1,0.6,0,"defensefield_sphere_spray");
+addAbility(NewShipType,"DefenseFieldAbility",1,0,2500,200,200,0.7,0.6,0,"defensefield_sphere_spray");
 addAbility(NewShipType,"DefenseFieldShieldAbility",0,4000,0,0);
 
 LoadSharedModel(NewShipType, "hgn_battlecruiser");
 
-AddShipAbility(NewShipType,"DefenseField",1,"ThisShipOnly",0);
+AddShipAbility(NewShipType,"DefenseField",1,"ThisShipOnly",0); -- This function is not redundant; it enables the range wireframe to be shown around the ship.
 
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 1","Hardpoint_IonBeam1","Weapon","Innate","Damageable","hgn_heavybattlecruiserionbeamturret", "", "","","","","","","","",""); 
 StartShipHardPointConfig(NewShipType,"Weapon IonBeam 2","Hardpoint_IonBeam2","Weapon","Innate","Damageable","hgn_heavybattlecruiserionbeamturret","", "","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Weapon_TurretTop4","Hardpoint_TurretTop4","Weapon","Innate","Ship","hgn_battlecruisergatlinggunrightside", "Hgn_BattleCruiserKineticBurstCannonRightSide","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Weapon_TurretTop3","Hardpoint_TurretTop3","Weapon","Innate","Ship","hgn_battlecruisergatlinggunleftside", "Hgn_BattleCruiserKineticBurstCannonLeftSide","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Weapon_TurretTop2","Hardpoint_TurretTop2","Weapon","Innate","Ship","hgn_battlecruisergatlinggun", "Hgn_BattleCruiserKineticBurstCannon","","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Weapon_TurretTop","Hardpoint_TurretTop","Weapon","Innate","Ship","hgn_battlecruisergatlinggun", "Hgn_BattleCruiserKineticBurstCannon","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon_TurretTop4","Hardpoint_TurretTop4","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturretrightside", "Hgn_BattleCruiserKineticBurstCannonRightSide","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon_TurretTop3","Hardpoint_TurretTop3","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturretleftside", "Hgn_BattleCruiserKineticBurstCannonLeftSide","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon_TurretTop2","Hardpoint_TurretTop2","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturret", "Hgn_BattleCruiserKineticBurstCannon","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon_TurretTop","Hardpoint_TurretTop","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturret", "Hgn_BattleCruiserKineticBurstCannon","","","","","","","","");
 StartShipWeaponConfig(NewShipType,"hgn_heavybattlecruiserkprbeamside","Weapon_pulsar","Weapon_pulsar");
 StartShipWeaponConfig(NewShipType,"hgn_heavybattlecruiserkprbeamside","Weapon_pulsar2","Weapon_pulsar2");
 StartShipWeaponConfig(NewShipType,"hgn_heavybattlecruiserkprbeamside","Weapon_pulsar3","Weapon_pulsar3");

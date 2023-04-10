@@ -53,6 +53,7 @@ Animatics/
 *.bak
 *.tmp
 *.temp
+*~
 
 # Build & Config Files
 *.toc

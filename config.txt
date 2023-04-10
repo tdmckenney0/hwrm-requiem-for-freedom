@@ -1,0 +1,40 @@
+// Example config file for Homeworld Remastered and Homeworld Classic Workshop MODs
+
+// This is a comment line.  Any line that begins with 2 forward slashes is ignored.
+// Config items consist of a keyword followed by a colon followed by data specifically
+// for that keyword.  For example: "Title: My First Homeworld MOD".  Data for a keyword
+// must appear on the same line as the keyword.  The only exception to this rule is the
+// "Description:" keyword which must appear on a line by itself followed by lines of text
+// that will be used as the description of the item in the Steam Workshop.  All text that
+// appears after the "Description:" keyword will become part of the item description on
+// Steam Workshop.  The description text is limited to 8,000 characters total in length.
+
+// title of the MOD that appears on the Steam Workshop (limited to 128 characters)
+Title: Homeworld: Requiem For Freedom
+
+// tags must be individual words separated by spaces.
+Tags: homeworld slipstream requiem freedom arena fast multiplayer skirmish
+
+// gametype is the type of game this MOD is designed for and can be any of: "HW1Classic", "HW2Classic", or "HomeworldRM" (without the double quotes) separated by spaces
+GameType: HomeworldRM
+
+// modtype is the type of mod for the game and can be any one of: "MOD", "Locale", "Badges", or "Cursors"
+ModType: MOD
+
+// bigfilename is the file name you want to use for your .big file (this should be a single word with no spaces).
+// for ModType 'Locale' this MUST match the name of the language in the 'locale' folder of your Locale MOD.
+BigFilename: RFF.big
+
+// WorkshopID is the Steam Workshop item number assigned to this item when you first create it.
+// This should be 0 by default before you create your Workshop item and the Workshop Tool will
+// set it to the Workshop Item number.  DO NOT modify this number once you have created a Workshop
+// item.  It will be used to update the workshop item when you make changes to your MOD later on.  
+WorkshopID: 2960369910
+
+// description that will appear on the Steam Workshop for this item
+Description:
+Homeworld: Requiem for Freedom is the spiritual successor to Slipstream: The Price of Freedom.
+
+This mod aims to create larger, faster, and more epic space battles optimized for multiplayer and skirmish modes!
+
+For more information and release information, please visit Github (https://github.com/tdmckenney0/hwrm-requiem-for-freedom).

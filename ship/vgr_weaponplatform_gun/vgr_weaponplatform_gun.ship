@@ -123,7 +123,7 @@ NewShipType.canJoinStrikeGroup=0
 addAbility(NewShipType,"ParadeCommand",1);
 addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1,"Munition, Fighter, Fighter_hw1, Corvette, Corvette_hw1, Capturer, Frigate, Utility,Resource,,,,, SmallCapitalShip, BigCapitalShip","justshootVgrPlatform");
 addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3);
-addAbility(NewShipType,"HyperSpaceCommand",0,1,200,500,0,3);
+addAbility(NewShipType,"HyperSpaceCommand",0, 0, 0, 0, 0, 3);
 addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Missiles and Mines.
 LoadModel(NewShipType,1);
 StartShipHardPointConfig(NewShipType,"Weapon_Gun_R","Hardpoint_Gun_R","Weapon","Innate","Ship","Vgr_VulcanKineticTurretLongRange","","","","","","","","");

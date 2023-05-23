@@ -164,8 +164,8 @@ addAbility(NewShipType,"MinelayerAbility",1,3.5); -- Allows ships to shoot at Mi
 addAbility(NewShipType,"DefenseFieldAbility",0,0,1200,200,200,0.7,0.6,0,"defensefield_sphere_spray");
 addAbility(NewShipType,"DefenseFieldShieldAbility",0,1200,0,0);
 LoadModel(NewShipType,1);
-StartShipHardPointConfig(NewShipType,"Weapon Top","Hardpoint_IonBeam1","Weapon","Generic","Destroyable","","hgn_battlecruisergatlinggunturrettop","hgn_battlecruiserminelaunchertop","Hgn_BattleCruiserIonBeamTurret","","","","","","","");
-StartShipHardPointConfig(NewShipType,"Weapon Bottom","Hardpoint_IonBeam2","Weapon","Generic","Destroyable","","hgn_battlecruisergatlinggunturretbottom","hgn_battlecruiserminelauncherbottom","Hgn_BattleCruiserIonBeamTurret","","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon Top","Hardpoint_IonBeam1","Weapon","Generic","Destroyable","","hgn_battlecruisergatlinggunturrettop","hgn_battlecruiserminelaunchertop","Hgn_BattleCruiserIonBeamTurretTop","","","","","","","");
+StartShipHardPointConfig(NewShipType,"Weapon Bottom","Hardpoint_IonBeam2","Weapon","Generic","Destroyable","","hgn_battlecruisergatlinggunturretbottom","hgn_battlecruiserminelauncherbottom","Hgn_BattleCruiserIonBeamTurretBottom","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop4","Hardpoint_TurretTop4","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturretrightside", "Hgn_BattleCruiserKineticBurstCannonRightSide","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop3","Hardpoint_TurretTop3","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturretleftside", "Hgn_BattleCruiserKineticBurstCannonLeftSide","","","","","","","","");
 StartShipHardPointConfig(NewShipType,"Weapon_TurretTop2","Hardpoint_TurretTop2","Weapon","Innate","Ship","hgn_battlecruiserplasmaburstturret", "Hgn_BattleCruiserKineticBurstCannon","","","","","","","","");

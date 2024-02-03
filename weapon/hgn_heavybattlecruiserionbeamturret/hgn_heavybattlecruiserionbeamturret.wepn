@@ -1,7 +1,7 @@
 StartWeaponConfig(NewWeaponType, "AnimatedTurret", "InstantHit", "IonBeam_Kpr", "Normal", 0, 10000, 0, 10, 2, 0, 50, 0, 1, 10, 0, 0, 1, 1, 20, 20, 0.1, "Normal", 1, 0, 1000);
 
-AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",1250,1250,"");
-AddWeaponResult(NewWeaponType,"Hit","Push","Target",10,20,"");
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",12000,13000,"");
+AddWeaponResult(NewWeaponType,"Hit","Push","Target",-450,-450,"");
 
 addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
 

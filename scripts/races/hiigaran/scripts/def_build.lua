@@ -669,6 +669,24 @@ build =
 		DisplayedName =			"$11520",
 		Description =			"$11520"
 	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hgn_battlecruiserionbeamturrettop",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		140,
+		DisplayedName =			"$2026",
+		Description =			"$11535"
+	},
+	{ 
+		Type = 					SubSystem, 
+		ThingToBuild = 			"hgn_battlecruiserionbeamturretbottom",
+		RequiredResearch =		"",
+		RequiredShipSubSystems =	"",
+		DisplayPriority =		150,
+		DisplayedName =			"$2026",
+		Description =			"$11535"
+	},
 -----------------------------------------------------------------------
 -- TEMP - All other ships here, for single player game ----------------
 	{ 

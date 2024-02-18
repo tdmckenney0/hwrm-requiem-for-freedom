@@ -4,7 +4,7 @@ PersistantData = {
   Squadrons = {
     -- Flagship
     {
-      type = "Kus_MotherShip",
+      type = "kus_heavybattlecruiser",
       subsystems = {
       },
       shiphold = {

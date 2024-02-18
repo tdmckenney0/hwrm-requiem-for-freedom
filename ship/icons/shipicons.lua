@@ -2406,6 +2406,8 @@ hgn_pulsarplatform = Hgn_IonTurret
 vgr_weaponplatform_plasma = Vgr_WeaponPlatform_gun
 hgn_heavybattlecruiser = Hgn_BattleCruiser
 vgr_heavybattlecruiser = Vgr_BattleCruiser
+kus_heavybattlecruiser = kus_heavycruiser
+tai_heavybattlecruiser = tai_heavycruiser
 
 -- Requiem For Freedom Subsystems
 hgn_heavybattlecruiserionbeamturret = Icon_Subsystem_IonTurret

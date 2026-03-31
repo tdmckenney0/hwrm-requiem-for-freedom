@@ -120,3 +120,7 @@ Edit `src/weapon/<weapon_name>/<weapon_name>.wepn`. Key changes:
 - Homeworld Remastered (Steam)
 - PowerShell 7+ for tooling
 - VS Code recommended
+
+## Temp directory
+
+Always use `temp`, `tmp`, or `.tmp` inside the repo root for temporary files — never the system temp directory (`%TEMP%`, `%TMP%`, or `$TMPDIR`). These temp directories are gitignored. 

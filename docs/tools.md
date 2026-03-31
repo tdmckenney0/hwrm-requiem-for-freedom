@@ -113,6 +113,54 @@ Ship                     maxhealth   buildCost   buildTime
 
 ---
 
+## `parse-logs.ps1` — Log and Crash Dump Parser
+
+Reads and filters `Hw2.log` and crash artifacts from the Homeworld Remastered runtime directory. Auto-detects the HW install path from the registry.
+
+**Usage:**
+
+```powershell
+# Show full log, color-coded by severity
+./tools/parse-logs.ps1
+
+# Show only errors and LUA errors (exits 1 if any found)
+./tools/parse-logs.ps1 -Errors
+
+# Show only Lua-related lines
+./tools/parse-logs.ps1 -Lua
+
+# Show only mod loading events and RFF-specific output
+./tools/parse-logs.ps1 -Mod
+
+# Live-tail the log (Ctrl+C to stop)
+./tools/parse-logs.ps1 -Tail
+
+# Show last 100 lines, errors only
+./tools/parse-logs.ps1 -Last 100 -Errors
+
+# Summarize crash artifacts (*ErrorLog.txt, *.dmp, *.mdmp)
+./tools/parse-logs.ps1 -Dumps
+
+# Override install path
+./tools/parse-logs.ps1 -HWPath "D:\Steam\steamapps\common\Homeworld\HomeworldRM" -Errors
+```
+
+**Output color coding:**
+
+| Color | Meaning |
+|-------|---------|
+| Red | `ERROR:` or `LUA ERROR` |
+| Yellow | `WARNING` |
+| Green | `LUA:` (script print output) |
+| Cyan | `MOD:` events, `RFF` / `requiem` lines |
+| White | All other lines |
+
+**Exit codes:** `0` = no errors found; `1` = at least one `ERROR`/`LUA ERROR` line present (CI-friendly).
+
+**Agent usage pattern:** Ask the user to run `./tools/parse-logs.ps1 -Errors` and paste the output. Cross-reference any Lua error file/line numbers with `src/`. For crash context, use `-Dumps`.
+
+---
+
 ## Workflow: Making a Balance Change
 
 1. Edit the relevant `.ship`, `.wepn`, or `.subs` file

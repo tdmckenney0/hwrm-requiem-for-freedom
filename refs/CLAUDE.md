@@ -21,4 +21,4 @@ Read-only reference material. Do not modify anything in this directory.
 - **Vanilla weapon stats**: `hw2ships-big/ship/<name>/` and weapon scripts inside
 - **Engine API examples**: `homeworldrm-big/scripts/` — `armourandshields.lua`, `commandlayer.lua`, `races/`
 - **Attack script patterns**: `homeworldrm-big/scripts/attack/`
-- **Slipstream precedents**: `slipstream-the-price-of-freedom/src/` — RFF's direct design ancestor
+- **Slipstream precedents**: `slipstream-the-price-of-freedom/src/` — RFF's direct design ancestor; see also `docs/slipstream.md` for a full summary of its ship stats, AI behavior, and design philosophy

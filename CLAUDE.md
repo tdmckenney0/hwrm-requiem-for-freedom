@@ -31,6 +31,7 @@ Full documentation is in `docs/`:
 | [docs/races.md](docs/races.md) | Per-faction AI scripts, starting fleets, AI globals |
 | [docs/tools.md](docs/tools.md) | PowerShell dev tools with usage examples |
 | [docs/maps.md](docs/maps.md) | Multiplayer map roster and level file structure |
+| [docs/slipstream.md](docs/slipstream.md) | Predecessor mod: ship roster, stats, AI, design philosophy |
 
 ## Repository Layout
 

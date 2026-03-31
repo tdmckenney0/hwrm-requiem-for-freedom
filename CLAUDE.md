@@ -45,6 +45,33 @@ tools/
   ship-stats.ps1       Balance comparison tool
 ```
 
+## Reference Files (`refs/`)
+
+The `refs/` directory contains read-only extracts from the base-game `.big` archives:
+
+| Directory | Contents |
+|-----------|----------|
+| `refs/homeworldrm-big/` | Main game logic, scripts, and data |
+| `refs/hw1ships-big/ship/` | HW1 ship definitions |
+| `refs/hw2ships-big/ship/` | HW2 ship definitions |
+| `refs/hwbackgrounds-big/background/` | Skybox files |
+| `refs/english-big/` | English localization strings |
+
+To override a base-game file, copy it from `refs/` to the same relative path under `src/`, then edit the copy. The path under `src/` mirrors the path relative to the ref root.
+
+```powershell
+# Override a HW1 ship (create dir if it doesn't exist)
+mkdir src/ship/kus_interceptor
+cp refs/hw1ships-big/ship/kus_interceptor/kus_interceptor.ship `
+   src/ship/kus_interceptor/kus_interceptor.ship
+
+# Override a script from the main game
+cp refs/homeworldrm-big/effect/hyperspaceeffecttweaks.lua `
+   src/effect/hyperspaceeffecttweaks.lua
+```
+
+Never edit files in `refs/` — they are source material only and are gitignored.
+
 ## Common Tasks
 
 ### Set Up Development Environment

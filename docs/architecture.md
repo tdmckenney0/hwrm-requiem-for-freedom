@@ -47,6 +47,44 @@ src/
         └── <weapon_name>.wepn    # Weapon stats file
 ```
 
+## Working with Reference Files
+
+The `refs/` directory holds read-only extracts from the base-game `.big` archives. These are the original files that RFF overrides. They are gitignored and never modified directly.
+
+| Directory | Contents |
+|-----------|----------|
+| `refs/homeworldrm-big/` | Main game logic, scripts, and data files |
+| `refs/hw1ships-big/ship/` | Homeworld 1 ship definitions (`.ship`) |
+| `refs/hw2ships-big/ship/` | Homeworld 2 ship definitions (`.ship`) |
+| `refs/hwbackgrounds-big/background/` | Skybox/background files |
+| `refs/english-big/` | English localization string tables |
+
+### Override Workflow
+
+To modify any base-game file, copy it from `refs/` into the matching path under `src/`, then edit the copy. The game engine loads files from `DataRFF` (i.e., `src/`) first, so the copy overrides the original.
+
+**Example — override a ship:**
+
+```powershell
+# Ship lives in refs/hw1ships-big/ship/kus_interceptor/
+mkdir src/ship/kus_interceptor
+cp refs/hw1ships-big/ship/kus_interceptor/kus_interceptor.ship `
+   src/ship/kus_interceptor/kus_interceptor.ship
+# Now edit src/ship/kus_interceptor/kus_interceptor.ship
+```
+
+**Example — override a script or effect:**
+
+```powershell
+# File lives at refs/homeworldrm-big/effect/hyperspaceeffecttweaks.lua
+# Mirror the path under src/:
+cp refs/homeworldrm-big/effect/hyperspaceeffecttweaks.lua `
+   src/effect/hyperspaceeffecttweaks.lua
+# Now edit src/effect/hyperspaceeffecttweaks.lua
+```
+
+The rule is: **the path relative to the ref root maps directly to the path relative to `src/`**.
+
 ## Layered Design
 
 ```

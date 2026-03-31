@@ -51,7 +51,12 @@ hwrm-requiem-for-freedom/
 │   └── weapon/       # Weapon definitions (.wepn)
 ├── artwork/          # Logo and marketing images
 ├── docs/             # This documentation
-├── refs/             # Reference materials (gitignored)
+├── refs/             # Read-only reference copies of base-game files (gitignored)
+│   ├── homeworldrm-big/          # Main game logic, scripts, and data
+│   ├── hw1ships-big/ship/        # Homeworld 1 ship definitions
+│   ├── hw2ships-big/ship/        # Homeworld 2 ship definitions
+│   ├── hwbackgrounds-big/background/  # Skybox/background files
+│   └── english-big/              # English localization string tables
 ├── temp/             # Scratch space (gitignored)
 └── tools/            # PowerShell development scripts
 ```

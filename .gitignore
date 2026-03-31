@@ -55,6 +55,11 @@ src/Animatics/
 *.temp
 *~
 
+# Temp directories (repo scratch space)
+temp/
+tmp/
+.tmp/
+
 # Build & Config Files
 *.toc
 *.env

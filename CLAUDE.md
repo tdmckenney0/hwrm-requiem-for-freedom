@@ -8,6 +8,15 @@
 - Compiled output: `RFF.big` (loaded from `DataRFF/` in the HW2 install)
 - Source: all files under `src/`
 
+## Temp directory
+
+**IMPORTANT: Always use the repo-local `temp/` directory for all temporary files and artifacts. Never use the system temp directory (`%TEMP%`, `%TMP%`, `$TMPDIR`, `/tmp`, or any path outside this repo).**
+
+- Correct: `temp/scratch.txt`, `temp/output.csv`, `./temp/working/`
+- Wrong: `/tmp/scratch.txt`, `$env:TEMP\output.csv`, `~/scratch.txt`
+
+The `temp/` directory is gitignored. Create subdirectories inside it freely. If you need a throwaway file, script output, intermediate data, or any artifact that should not be committed, it goes in `temp/`.
+
 ## Documentation
 
 Full documentation is in `docs/`:
@@ -147,7 +156,3 @@ Edit `src/weapon/<weapon_name>/<weapon_name>.wepn`. Key changes:
 - Homeworld Remastered (Steam)
 - PowerShell 7+ for tooling
 - VS Code recommended
-
-## Temp directory
-
-Always use `temp`, `tmp`, or `.tmp` inside the repo root for temporary files — never the system temp directory (`%TEMP%`, `%TMP%`, or `$TMPDIR`). These temp directories are gitignored. 

@@ -43,7 +43,7 @@ Temporary Items
 .apdisk
 
 # Homeworld2 Files
-Animatics/
+src/Animatics/
 *.big
 *.exe
 

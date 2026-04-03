@@ -43,7 +43,7 @@ Temporary Items
 .apdisk
 
 # Homeworld2 Files
-Animatics/
+src/Animatics/
 *.big
 *.exe
 
@@ -54,6 +54,11 @@ Animatics/
 *.tmp
 *.temp
 *~
+
+# Temp directories (repo scratch space)
+temp/
+tmp/
+.tmp/
 
 # Build & Config Files
 *.toc
